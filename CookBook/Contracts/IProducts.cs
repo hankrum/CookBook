@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IProducts : IRecordable
+    interface IProducts : IRecordable, IEditable
     {
         IEnumerable<IProduct> Products { get; }
-        void AddProduct(IProduct product);
-        void RemoveProduct(IProduct product);
-        void RemoveProduct(string name);
-        void EraseAll();
     }
 }

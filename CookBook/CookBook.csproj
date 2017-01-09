@@ -46,6 +46,7 @@
     <Compile Include="Common\MeasuringUnit.cs" />
     <Compile Include="Common\RecipeType.cs" />
     <Compile Include="Common\Validation.cs" />
+    <Compile Include="Contracts\IEditable.cs" />
     <Compile Include="Contracts\INamed.cs" />
     <Compile Include="Contracts\IPreparations.cs" />
     <Compile Include="Contracts\IRecordable.cs" />

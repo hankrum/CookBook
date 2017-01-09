@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IPreparations : IEditable
+    interface IEditable
     {
-        IEnumerable<IPreparation> Preparations { get; }
+        void Add<T>(T item);
+        void Remove<T>(T item);
+        void Remove<T>(string name);
+        void EraseAll<T>();
 
     }
 }
