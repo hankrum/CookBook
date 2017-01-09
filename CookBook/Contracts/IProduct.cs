@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface Preparation : INamed
+    interface IProduct : INamed
     {
-        int Duration { get; }
-        string Description { get; }
+        decimal Quantity { get; }
+        MeasuringUnit Unit { get; }
+        decimal Price { get; }
         bool Obligatory { get; set; }
     }
 }

@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface Recipe : INamed
+    interface IRecipe : INamed
     {
-        IEnumerable<Product> Products { get; }
-        IEnumerable<Preparation> Preparations { get; }
+        IProducts Products { get; }
+        IEnumerable<IPreparation> Preparations { get; }
 
-        void AddProduct(Product product);
-        void RemoveProduct(Product product);
+        void AddProduct(IProduct product);
+        void RemoveProduct(IProduct product);
         void RemoveProduct(string name);
         void EraseAllProducts();
 
-        void AddPreparation(Preparation preparation);
-        void RemovePreparation(Preparation preparation);
+        void AddPreparation(IPreparation preparation);
+        void RemovePreparation(IPreparation preparation);
         void RemovePreparation(string name);
         void EraseAllPreparations();
 

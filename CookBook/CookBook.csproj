@@ -47,11 +47,12 @@
     <Compile Include="Common\RecipeType.cs" />
     <Compile Include="Common\Validation.cs" />
     <Compile Include="Contracts\INamed.cs" />
-    <Compile Include="Contracts\Preparation.cs" />
-    <Compile Include="Contracts\Product.cs" />
-    <Compile Include="Contracts\Products.cs" />
-    <Compile Include="Contracts\Recipe.cs" />
-    <Compile Include="Contracts\Recipes.cs" />
+    <Compile Include="Contracts\IRecordable.cs" />
+    <Compile Include="Contracts\IPreparation.cs" />
+    <Compile Include="Contracts\IProduct.cs" />
+    <Compile Include="Contracts\IProducts.cs" />
+    <Compile Include="Contracts\IRecipe.cs" />
+    <Compile Include="Contracts\IRecipes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
