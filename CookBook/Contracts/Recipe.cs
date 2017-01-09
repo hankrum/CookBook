@@ -10,6 +10,8 @@ namespace CookBook.Contracts
     interface Recipe : INamed
     {
         IEnumerable<Product> Products { get; }
+        IEnumerable<Preparation> Preparations { get; }
+
         RecipeType RecipeKind { get; }
     }
 }

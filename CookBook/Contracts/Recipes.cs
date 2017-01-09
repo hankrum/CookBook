@@ -10,12 +10,11 @@ namespace CookBook.Contracts
     interface Recipes
     {
         IEnumerable<Recipe> Recipes { get; }
-        IEnumerable<Preparation> Preparations { get; }
 
         void AddRecipe(Recipe recipe);
         void RemoveRecipe(Recipe recipe);
-        void Remove(string name);
-        void EraseAll();
+        void RemoveRecipe(string name);
+        void EraseAllRecipes();
         void SaveToFile();
         void LoadFromFile();
         IEnumerable<Recipe> QueryByProduct(Product product);
