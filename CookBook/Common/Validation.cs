@@ -16,5 +16,13 @@ namespace CookBook.Common
             }
         }
 
+        public static void GreaterOrEqualThen(decimal item, decimal min)
+        {
+            if (item < min)
+            {
+                throw new ArgumentOutOfRangeException($"Must be equal to or bigger than {min}");
+            }
+        }
+
     }
 }
