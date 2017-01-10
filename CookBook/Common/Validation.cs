@@ -24,5 +24,12 @@ namespace CookBook.Common
             }
         }
 
+        public static void IsNull(object item)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException("Object cannot be null");
+            }
+        }
     }
 }

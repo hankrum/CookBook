@@ -1,4 +1,5 @@
-﻿using CookBook.Contracts;
+﻿using CookBook.Common;
+using CookBook.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,14 +20,15 @@ namespace CookBook.Data
             }
         }
 
-        public void Add<T>(T item)
+        public void Add(Product item)
         {
-            throw new NotImplementedException();
+            Validation.IsNull(item);
+            this.products.Add(item);
         }
 
-        public void EraseAll<T>()
+        public void EraseAll()
         {
-            throw new NotImplementedException();
+            this.products.RemoveAll(x=>true);
         }
 
         public void LoadFromFile()
