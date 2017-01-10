@@ -13,6 +13,6 @@ namespace CookBook.Common
         WarmStarter, 
         ColdStarter,
         Main,
-        Desert
+        Dessert
     }
 }
