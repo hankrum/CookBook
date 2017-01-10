@@ -16,7 +16,7 @@ namespace CookBook.Common
             }
         }
 
-        public static void GreaterOrEqualThen(decimal item, decimal min)
+        public static void GreaterOrEqualThen(decimal? item, decimal min)
         {
             if (item < min)
             {

@@ -11,9 +11,9 @@ namespace CookBook.Data
     public class Product : NamedObject, IProduct
     {
         private bool obligatory;
-        private decimal price;
-        private decimal quantity;
-        MeasuringUnit measuringUnit;
+        private decimal? price;
+        private decimal? quantity;
+        MeasuringUnit unit;
 
         public bool Obligatory
         {
@@ -28,7 +28,7 @@ namespace CookBook.Data
             }
         }
 
-        public decimal Price
+        public decimal? Price
         {
             get
             {
@@ -41,7 +41,7 @@ namespace CookBook.Data
             }
         }
 
-        public decimal Quantity
+        public decimal? Quantity
         {
             get
             {
@@ -58,12 +58,23 @@ namespace CookBook.Data
         {
             get
             {
-                return this.measuringUnit;
+                return this.unit;
             }
             set
             {
-                this.measuringUnit = value;
+                this.unit = value;
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendFormat(
+                "{0} {1} {2}", 
+                this.Name,
+                this.Quantity != null ? $", Quantity: {this.Quantity.ToString()} {this.Unit}, " : GlobalConstants.EmptyString,
+                this.Price != null ? $"Price: {this.Price.ToString()}" : GlobalConstants.EmptyString);
+            return result.ToString();
         }
     }
 }

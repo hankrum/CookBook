@@ -9,9 +9,9 @@ namespace CookBook.Contracts
 {
     interface IProduct : INamed
     {
-        decimal Quantity { get; }
+        decimal? Quantity { get; }
         MeasuringUnit Unit { get; }
-        decimal Price { get; }
+        decimal? Price { get; }
         bool Obligatory { get; set; }
     }
 }
