@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IRecipe : INamed
+    public interface IRecipe : INamed
     {
         IProducts Products { get; }
         IPreparations Preparations { get; }

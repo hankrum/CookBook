@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IEditable
+    public interface IEditable
     {
         void Add<T>(T item);
         void Remove<T>(T item);

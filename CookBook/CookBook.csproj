@@ -58,6 +58,7 @@
     <Compile Include="Contracts\IRecipes.cs" />
     <Compile Include="Data\NamedObject.cs" />
     <Compile Include="Data\Product.cs" />
+    <Compile Include="Data\Products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

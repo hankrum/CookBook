@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface INamed
+    public interface INamed
     {
         string Name { get; set; }
     }

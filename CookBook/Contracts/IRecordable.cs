@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IRecordable
+    public interface IRecordable
     {
         void SaveToFile();
         void LoadFromFile();

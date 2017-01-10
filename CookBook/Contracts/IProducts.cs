@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IProducts : IRecordable, IEditable
+    public interface IProducts : IRecordable, IEditable
     {
-        IEnumerable<IProduct> Products { get; }
+        IList<IProduct> ProductsList { get; }
     }
 }

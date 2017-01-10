@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IPreparations : IEditable
+    public interface IPreparations : IEditable
     {
         IEnumerable<IPreparation> Preparations { get; }
 

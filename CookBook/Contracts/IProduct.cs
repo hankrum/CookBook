@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IProduct : INamed
+    public interface IProduct : INamed
     {
         decimal? Quantity { get; }
         MeasuringUnit Unit { get; }

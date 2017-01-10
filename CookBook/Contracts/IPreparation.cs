@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CookBook.Contracts
 {
-    interface IPreparation : INamed
+    public interface IPreparation : INamed
     {
         int Duration { get; }
         string Description { get; }
