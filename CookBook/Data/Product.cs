@@ -50,6 +50,7 @@ namespace CookBook.Data
             set
             {
                 Validation.GreaterOrEqualThen(value, 0);
+                this.quantity = value;
             }
         }
 
