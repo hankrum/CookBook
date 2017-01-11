@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace CookBook.Contracts
 {
@@ -12,5 +13,7 @@ namespace CookBook.Contracts
         int Duration { get; }
         string Description { get; }
         bool Obligatory { get; set; }
+
+        IPreparation Builder(XmlNode item, int duration, string description, bool obligatory);
     }
 }
