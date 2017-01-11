@@ -59,6 +59,14 @@ namespace CookBook.Data
             this.Obligatory = obligatory;
         }
 
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendFormat($"{this.Name}, duration: {this.Duration}, description: {this.Description}");
+
+            return result.ToString();
+        }
+
         public static Preparation Builder(XmlNode item=null,
             string parName=null,
             int? parDuration=null,
