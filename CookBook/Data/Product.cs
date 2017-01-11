@@ -92,7 +92,7 @@ namespace CookBook.Data
             return result.ToString();
         }
 
-        public IProduct Builder(XmlNode item = null, 
+        public static Product Builder(XmlNode item = null, 
             string parName = null,
             decimal? parQuantity = null, 
             MeasuringUnit? parUnit = null, 

@@ -45,12 +45,12 @@ namespace CookBook.Test
             XmlNode rootNode = doc.DocumentElement;
             foreach (XmlNode node in rootNode.ChildNodes)
             {
-                string name = node["Name"].InnerText;
-                decimal price = decimal.Parse(node["Price"].InnerText);
-                decimal quantity = decimal.Parse(node["Quantity"].InnerText);
-                bool obligatory = bool.Parse(node["Obligatory"].InnerText);
-                MeasuringUnit unit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), node["Unit"].InnerText);
-                Product product = new Product(name, obligatory, price, quantity, unit);
+                //string name = node["Name"].InnerText;
+                //decimal price = decimal.Parse(node["Price"].InnerText);
+                //decimal quantity = decimal.Parse(node["Quantity"].InnerText);
+                //bool obligatory = bool.Parse(node["Obligatory"].InnerText);
+                //MeasuringUnit unit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), node["Unit"].InnerText);
+                Product product = Product.Builder(node);
                 products.Add(product);
                 Console.WriteLine(product.ToString());
             }
