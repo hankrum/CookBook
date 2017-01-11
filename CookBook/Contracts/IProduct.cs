@@ -11,11 +11,11 @@ namespace CookBook.Contracts
     public interface IProduct : INamed
     {
         decimal? Quantity { get; }
-        MeasuringUnit Unit { get; }
+        MeasuringUnit? Unit { get; }
         decimal? Price { get; }
         bool? Obligatory { get; set; }
 
-        IProduct Builder(XmlNode item, decimal? quantity, MeasuringUnit unit, decimal? price, bool? obligatory);
+        IProduct Builder(XmlNode item, string parName, decimal? parQuantity, MeasuringUnit? parUnit, decimal? parPrice, bool? parObligatory);
        
     }
 }

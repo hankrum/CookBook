@@ -14,7 +14,7 @@ namespace CookBook.Data
         private bool? obligatory;
         private decimal? price;
         private decimal? quantity;
-        MeasuringUnit unit;
+        MeasuringUnit? unit;
 
         public bool? Obligatory
         {
@@ -55,7 +55,7 @@ namespace CookBook.Data
             }
         }
 
-        public MeasuringUnit Unit
+        public MeasuringUnit? Unit
         {
             get
             {
@@ -67,13 +67,13 @@ namespace CookBook.Data
             }
         }
 
-        public Product(string name, MeasuringUnit unit) : base(name)
+        public Product(string name, MeasuringUnit? unit) : base(name)
         {
             this.Unit = unit;
         }
 
         //Only for testing purposes
-        public Product(string name, bool? obligatory, decimal? price, decimal? quantity, MeasuringUnit unit) 
+        public Product(string name, bool? obligatory, decimal? price, decimal? quantity, MeasuringUnit? unit) 
             : this(name, unit)
         {
             this.Obligatory = obligatory;
@@ -92,40 +92,66 @@ namespace CookBook.Data
             return result.ToString();
         }
 
-        public IProduct Builder(XmlNode item)
+        public IProduct Builder(XmlNode item = null, 
+            string parName = null,
+            decimal? parQuantity = null, 
+            MeasuringUnit? parUnit = null, 
+            decimal? parPrice = null, 
+            bool? parObligatory = null)
         {
-            string name = item["Name"].InnerText;
-            decimal buffer;
-            decimal? xmlPrice;
-            if (decimal.TryParse(item["Price"].InnerText, out buffer))
+            string initialName;
+            MeasuringUnit? initialUnit;
+            if (item == null)
             {
-                xmlPrice = buffer;
+                initialName = parName;
+                initialUnit = parUnit;
             }
             else
             {
-                xmlPrice = null;
+                initialName = item["Name"].InnerText;
+                initialUnit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
             }
-            decimal? xmlQuantity;
-            if (decimal.TryParse(item["Quantity"].InnerText, out buffer))
+            Product product = new Product(initialName, initialUnit);
+
+            if (item==null)
             {
-                xmlQuantity = buffer;
+                product.Price = parPrice;
+                product.Unit = parUnit;
+                product.Quantity = parQuantity;
             }
             else
             {
-                xmlQuantity = null;
+                string name = item["Name"].InnerText;
+                MeasuringUnit xmlUnit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
+
+                decimal buffer;
+                if (decimal.TryParse(item["Price"].InnerText, out buffer))
+                {
+                    product.Price = buffer;
+                }
+                else
+                {
+                    product.Price = null;
+                }
+                if (decimal.TryParse(item["Quantity"].InnerText, out buffer))
+                {
+                    product.Quantity = buffer;
+                }
+                else
+                {
+                    product.Quantity = null;
+                }
+                bool boolBuffer;
+                if (bool.TryParse(item["Obligatory"].InnerText, out boolBuffer))
+                {
+                    product.Obligatory = boolBuffer;
+                }
+                else
+                {
+                    product.Obligatory = null;
+                }
+
             }
-            bool? xmlObligatory;
-            bool boolBuffer;
-            if (bool.TryParse(item["Obligatory"].InnerText, out boolBuffer))
-            {
-                xmlObligatory = boolBuffer;
-            }
-            else
-            {
-                xmlObligatory = null;
-            }
-            MeasuringUnit xmlUnit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
-            Product product = new Product(name, xmlObligatory, xmlPrice, xmlQuantity, unit);
             return product;
         }
     }
