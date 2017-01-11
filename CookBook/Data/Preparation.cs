@@ -89,7 +89,8 @@ namespace CookBook.Data
             {
                 initialName = item["Name"].InnerText;
                 initialDuration = int.Parse(item["Duration"].InnerText);
-                initialDescription = item["Descrition"].InnerText;
+                //string buffer = ;
+                initialDescription = item["Description"].InnerText;
                 initialObligatory = bool.Parse(item["Obligatory"].InnerText);
             }
 

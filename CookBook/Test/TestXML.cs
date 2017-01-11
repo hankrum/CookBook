@@ -55,5 +55,20 @@ namespace CookBook.Test
                 Console.WriteLine(product.ToString());
             }
         }
+
+        public static void PreparationsLoad()
+        {
+            List<Preparation> preparations = new List<Preparation>();
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load("preparations.xml");
+            XmlNode rootNode = doc.DocumentElement;
+            foreach (XmlNode node in rootNode.ChildNodes)
+            {
+                Preparation preparation = Preparation.Builder(node);
+                preparations.Add(preparation);
+                Console.WriteLine(preparation.ToString());
+            }
+        }
     }
 }
