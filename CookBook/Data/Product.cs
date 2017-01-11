@@ -68,7 +68,7 @@ namespace CookBook.Data
             }
         }
 
-        public Product(string name, MeasuringUnit? unit) : base(name)
+        private Product(string name, MeasuringUnit? unit) : base(name)
         {
             this.Unit = unit;
         }

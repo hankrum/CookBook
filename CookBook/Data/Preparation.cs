@@ -53,7 +53,7 @@ namespace CookBook.Data
             }
         }
 
-        public Preparation(string name, int? duration, bool? obligatory) : base(name)
+        private Preparation(string name, int? duration, bool? obligatory) : base(name)
         {
             this.Duration = duration;
             this.Obligatory = obligatory;

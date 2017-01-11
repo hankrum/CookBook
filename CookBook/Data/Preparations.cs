@@ -21,7 +21,7 @@ namespace CookBook.Data
             }
         }
 
-        public Preparations()
+        private Preparations()
         {
             this.preparationList = new List<Preparation>();
         }
