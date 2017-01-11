@@ -24,7 +24,7 @@ namespace CookBook.Common
             }
         }
 
-        public static void GreaterThan(int item, int min)
+        public static void GreaterThan(int? item, int min)
         {
             if (item <= min)
             {

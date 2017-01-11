@@ -12,8 +12,8 @@ namespace CookBook.Data
     public class Preparation : NamedObject, IPreparation
     {
         private string description;
-        int duration;
-        bool obligatory;
+        int? duration;
+        bool? obligatory;
 
         public string Description
         {
@@ -27,7 +27,7 @@ namespace CookBook.Data
             }
         }
 
-        public int Duration
+        public int? Duration
         {
             get
             {
@@ -40,7 +40,7 @@ namespace CookBook.Data
             }
         }
 
-        public bool Obligatory
+        public bool? Obligatory
         {
             get
             {
@@ -53,15 +53,42 @@ namespace CookBook.Data
             }
         }
 
-        public Preparation(string name, int duration, bool obligatory) : base(name)
+        public Preparation(string name, int? duration, bool? obligatory) : base(name)
         {
             this.Duration = duration;
             this.Obligatory = obligatory;
         }
 
-        public IPreparation Builder(XmlNode item, int duration, string description, bool obligatory)
+        public static Preparation Builder(XmlNode item=null,
+            string parName=null,
+            int? parDuration=null,
+            string parDescription=null, 
+            bool? parObligatory=null)
         {
-            throw new NotImplementedException();
+            string initialName;
+            int? initialDuration;
+            string initialDescription;
+            bool? initialObligatory;
+
+            if (item == null)
+            {
+                initialName = parName;
+                initialDuration = parDuration;
+                initialDescription = parDescription;
+                initialObligatory = parObligatory;
+            }
+            else
+            {
+                initialName = item["Name"].InnerText;
+                initialDuration = int.Parse(item["Duration"].InnerText);
+                initialDescription = item["Descrition"].InnerText;
+                initialObligatory = bool.Parse(item["Obligatory"].InnerText);
+            }
+
+            Preparation preparation = new Preparation(initialName, initialDuration, initialObligatory);
+            preparation.Description = initialDescription;
+
+            return preparation;
         }
     }
 }

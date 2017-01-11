@@ -10,9 +10,9 @@ namespace CookBook.Contracts
 {
     public interface IPreparation : INamed
     {
-        int Duration { get; }
+        int? Duration { get; }
         string Description { get; }
-        bool Obligatory { get; set; }
+        bool? Obligatory { get; set; }
 
     }
 }
