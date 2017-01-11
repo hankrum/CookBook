@@ -21,7 +21,7 @@ namespace CookBook.Data
             }
         }
 
-        private Products()
+        public Products()
         {
             this.products = new List<Product>();
         }

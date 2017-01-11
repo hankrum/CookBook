@@ -12,6 +12,7 @@ namespace CookBook.Data
     public class Recipe : NamedObject
     {
         private Preparations thePreparations;
+        private Products theProducts;
 
         public Preparations ThePreparations
         {
@@ -19,27 +20,47 @@ namespace CookBook.Data
             {
                 return this.thePreparations;
             }
+            private set
+            {
+                this.thePreparations = value;
+            }
         }
 
-        public IProducts Products
+        public Products TheProducts
         {
             get
             {
-                throw new NotImplementedException();
+                return this.theProducts;
+            }
+            private set
+            {
+                this.theProducts = value;
             }
         }
 
         public RecipeType RecipeKind
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            get; private set;
         }
 
-        public IRecipe Builder(XmlNode item, IProducts products, IPreparations preparations, RecipeType recipeKind)
+        public Recipe(string name, RecipeType kind) : base(name)
         {
-            throw new NotImplementedException();
+            this.thePreparations = new Preparations();
+            this.theProducts = new Products();
+            this.RecipeKind = kind;
+        }
+
+        public Recipe Builder(XmlNode item)
+        {
+            string initialName = item["Name"].InnerText;
+            RecipeType initialKind = (RecipeType)Enum.Parse(typeof(RecipeType), item["RecipeKind"].InnerText);
+            Products products = Products.Builder(item["Products"]);
+            Preparations preparations = Preparations.Builder(item["Preparations"]);
+            Recipe result = new Recipe(initialName, initialKind);
+            result.TheProducts = products;
+            result.ThePreparations = preparations;
+
+            return result;
         }
     }
 }
