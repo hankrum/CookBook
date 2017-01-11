@@ -11,12 +11,12 @@ namespace CookBook.Data
 {
     public class Product : NamedObject, IProduct
     {
-        private bool obligatory;
+        private bool? obligatory;
         private decimal? price;
         private decimal? quantity;
         MeasuringUnit unit;
 
-        public bool Obligatory
+        public bool? Obligatory
         {
             get
             {
@@ -67,7 +67,7 @@ namespace CookBook.Data
             }
         }
 
-        public Product( string name, bool obligatory, decimal price, decimal quantity, MeasuringUnit unit) : base(name)
+        public Product( string name, bool? obligatory, decimal? price, decimal? quantity, MeasuringUnit unit) : base(name)
         {
             this.Obligatory = obligatory;
             this.Price = price;
@@ -89,7 +89,16 @@ namespace CookBook.Data
         public IProduct FromXML(XmlNode item)
         {
             string name = item["Name"].InnerText;
-            decimal price = decimal.Parse(item["Price"].InnerText);
+            decimal buffer;
+            decimal? price;
+            if (decimal.TryParse(item["Price"].InnerText, out buffer))
+            {
+                price = buffer;
+            }
+            else
+            {
+                price = null;
+            }
             decimal quantity = decimal.Parse(item["Quantity"].InnerText);
             bool obligatory = bool.Parse(item["Obligatory"].InnerText);
             MeasuringUnit unit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
