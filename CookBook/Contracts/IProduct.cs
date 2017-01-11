@@ -15,7 +15,7 @@ namespace CookBook.Contracts
         decimal? Price { get; }
         bool? Obligatory { get; set; }
 
-        IProduct FromXML(XmlNode item);
+        IProduct Builder(XmlNode item, decimal? quantity, MeasuringUnit unit, decimal? price, bool? obligatory);
        
     }
 }

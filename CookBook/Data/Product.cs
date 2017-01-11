@@ -67,12 +67,18 @@ namespace CookBook.Data
             }
         }
 
-        public Product( string name, bool? obligatory, decimal? price, decimal? quantity, MeasuringUnit unit) : base(name)
+        public Product(string name, MeasuringUnit unit) : base(name)
+        {
+            this.Unit = unit;
+        }
+
+        //Only for testing purposes
+        public Product(string name, bool? obligatory, decimal? price, decimal? quantity, MeasuringUnit unit) 
+            : this(name, unit)
         {
             this.Obligatory = obligatory;
             this.Price = price;
             this.Quantity = quantity;
-            this.Unit = unit;
         }
 
         public override string ToString()
@@ -86,23 +92,40 @@ namespace CookBook.Data
             return result.ToString();
         }
 
-        public IProduct FromXML(XmlNode item)
+        public IProduct Builder(XmlNode item)
         {
             string name = item["Name"].InnerText;
             decimal buffer;
-            decimal? price;
+            decimal? xmlPrice;
             if (decimal.TryParse(item["Price"].InnerText, out buffer))
             {
-                price = buffer;
+                xmlPrice = buffer;
             }
             else
             {
-                price = null;
+                xmlPrice = null;
             }
-            decimal quantity = decimal.Parse(item["Quantity"].InnerText);
-            bool obligatory = bool.Parse(item["Obligatory"].InnerText);
-            MeasuringUnit unit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
-            Product product = new Product(name, obligatory, price, quantity, unit);
+            decimal? xmlQuantity;
+            if (decimal.TryParse(item["Quantity"].InnerText, out buffer))
+            {
+                xmlQuantity = buffer;
+            }
+            else
+            {
+                xmlQuantity = null;
+            }
+            bool? xmlObligatory;
+            bool boolBuffer;
+            if (bool.TryParse(item["Obligatory"].InnerText, out boolBuffer))
+            {
+                xmlObligatory = boolBuffer;
+            }
+            else
+            {
+                xmlObligatory = null;
+            }
+            MeasuringUnit xmlUnit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
+            Product product = new Product(name, xmlObligatory, xmlPrice, xmlQuantity, unit);
             return product;
         }
     }
