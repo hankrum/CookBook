@@ -21,6 +21,7 @@ namespace CookBook.Data
 
             set
             {
+                Validation.IsNull(value);
                 Validation.LengthMoreThan(value, 2);
                 this.name = value;
             }

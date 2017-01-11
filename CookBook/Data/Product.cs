@@ -37,7 +37,7 @@ namespace CookBook.Data
             }
             set
             {
-                Validation.GreaterOrEqualThen(value, 0);
+                Validation.GreaterOrEqualThan(value, 0);
                 this.price = value;
             }
         }
@@ -50,7 +50,7 @@ namespace CookBook.Data
             }
             set
             {
-                Validation.GreaterOrEqualThen(value, 0);
+                Validation.GreaterOrEqualThan(value, 0);
                 this.quantity = value;
             }
         }
@@ -63,6 +63,7 @@ namespace CookBook.Data
             }
             set
             {
+                Validation.IsNull(value);
                 this.unit = value;
             }
         }

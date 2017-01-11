@@ -57,6 +57,7 @@
     <Compile Include="Contracts\IRecipe.cs" />
     <Compile Include="Contracts\IRecipes.cs" />
     <Compile Include="Data\NamedObject.cs" />
+    <Compile Include="Data\Preparation.cs" />
     <Compile Include="Data\Product.cs" />
     <Compile Include="Data\Products.cs" />
     <Compile Include="Program.cs" />

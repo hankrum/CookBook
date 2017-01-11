@@ -14,6 +14,5 @@ namespace CookBook.Contracts
         string Description { get; }
         bool Obligatory { get; set; }
 
-        IPreparation Builder(XmlNode item, int duration, string description, bool obligatory);
     }
 }
