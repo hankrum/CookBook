@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace CookBook.Data
 {
@@ -18,6 +19,11 @@ namespace CookBook.Data
             {
                 return this.products;
             }
+        }
+
+        public Products()
+        {
+            this.products = new List<Product>();
         }
 
         public void Add(Product item)
@@ -49,6 +55,19 @@ namespace CookBook.Data
         public void SaveToFile()
         {
             throw new NotImplementedException();
+        }
+
+        public static Products Builder(XmlNode item)
+        {
+            Products result = new Products();
+
+            foreach (XmlNode node in item.ChildNodes)
+            {
+                Product pItem = Product.Builder(node);
+                result.Add(pItem);
+            }
+
+            return result;
         }
     }
 }
