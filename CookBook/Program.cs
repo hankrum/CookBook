@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CookBook.Test;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,9 @@ namespace CookBook
 {
     class Startup
     {
-        static void Main()
+        public static void Main()
         {
+            TestXML.ProductsLoad();
         }
     }
 }

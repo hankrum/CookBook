@@ -25,5 +25,10 @@ namespace CookBook.Data
                 this.name = value;
             }
         }
+
+        public NamedObject(string name)
+        {
+            this.Name = name;
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CookBook.Common;
+using System.Xml;
 
 namespace CookBook.Data
 {
@@ -37,7 +38,7 @@ namespace CookBook.Data
             set
             {
                 Validation.GreaterOrEqualThen(value, 0);
-                this.Price = value;
+                this.price = value;
             }
         }
 
@@ -66,6 +67,14 @@ namespace CookBook.Data
             }
         }
 
+        public Product( string name, bool obligatory, decimal price, decimal quantity, MeasuringUnit unit) : base(name)
+        {
+            this.Obligatory = obligatory;
+            this.Price = price;
+            this.Quantity = quantity;
+            this.Unit = unit;
+        }
+
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
@@ -75,6 +84,17 @@ namespace CookBook.Data
                 this.Quantity != null ? $", Quantity: {this.Quantity.ToString()} {this.Unit}, " : GlobalConstants.EmptyString,
                 this.Price != null ? $"Price: {this.Price.ToString()}" : GlobalConstants.EmptyString);
             return result.ToString();
+        }
+
+        public IProduct FromXML(XmlNode item)
+        {
+            string name = item["Name"].InnerText;
+            decimal price = decimal.Parse(item["Price"].InnerText);
+            decimal quantity = decimal.Parse(item["Quantity"].InnerText);
+            bool obligatory = bool.Parse(item["Obligatory"].InnerText);
+            MeasuringUnit unit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
+            Product product = new Product(name, obligatory, price, quantity, unit);
+            return product;
         }
     }
 }

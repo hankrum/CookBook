@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace CookBook.Contracts
 {
@@ -13,5 +14,8 @@ namespace CookBook.Contracts
         MeasuringUnit Unit { get; }
         decimal? Price { get; }
         bool Obligatory { get; set; }
+
+        IProduct FromXML(XmlNode item);
+       
     }
 }
