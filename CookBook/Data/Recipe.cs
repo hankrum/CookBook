@@ -50,7 +50,7 @@ namespace CookBook.Data
             this.RecipeKind = kind;
         }
 
-        public Recipe Builder(XmlNode item)
+        public static Recipe Builder(XmlNode item)
         {
             string initialName = item["Name"].InnerText;
             RecipeType initialKind = (RecipeType)Enum.Parse(typeof(RecipeType), item["RecipeKind"].InnerText);

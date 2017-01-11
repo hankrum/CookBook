@@ -122,11 +122,12 @@ namespace CookBook.Data
             }
             else
             {
-                string name = item["Name"].InnerText;
-                MeasuringUnit xmlUnit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
+                //string name = item["Name"].InnerText;
+                //MeasuringUnit xmlUnit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), item["Unit"].InnerText);
 
                 decimal buffer;
-                if (decimal.TryParse(item["Price"].InnerText, out buffer))
+                string text = item["Price"].InnerText;
+                if (decimal.TryParse(text, out buffer))
                 {
                     product.Price = buffer;
                 }

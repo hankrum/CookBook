@@ -11,7 +11,8 @@ namespace CookBook
     {
         public static void Main()
         {
-            TestXML.PreparationsLoad();
+            //TestXML.PreparationsLoad();
+            Engine.Start();
         }
     }
 }
