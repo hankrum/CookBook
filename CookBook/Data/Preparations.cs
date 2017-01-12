@@ -13,7 +13,7 @@ namespace CookBook.Data
     {
         private List<Preparation> preparationList;
 
-        List<Preparation> PreparationList
+        public List<Preparation> PreparationList
         {
             get
             {

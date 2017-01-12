@@ -62,5 +62,31 @@ namespace CookBook.Data
 
             return result;
         }
+
+        // Method to calculate the combined price of all the products that will be used in the recipe
+        public decimal CalculatePrice(Products TheProducts)
+        {
+            decimal finalPrice = 0;
+
+            foreach (var item in TheProducts.ProductsList)
+            {
+                finalPrice += (decimal)item.Price;
+            }
+
+            return finalPrice;
+        }
+
+        // Method to calculate the time needed to prepare the recipe
+        public double CalculateDuration(Preparations ThePreparation)
+        {
+            double timeNeeded = 0;
+
+            foreach (var item in ThePreparation.PreparationList)
+            {
+                timeNeeded += (double)item.Duration;
+            }
+
+            return timeNeeded;
+        }
     }
 }
