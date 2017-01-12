@@ -13,6 +13,11 @@ namespace CookBook.Data
     {
         private List<Recipe> theRecipes;
 
+        public Recipes()
+        {
+            this.theRecipes = new List<Recipe>();
+        }
+
         public List<Recipe> TheRecipes
         {
             get
