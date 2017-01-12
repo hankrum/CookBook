@@ -11,30 +11,30 @@ namespace CookBook.Test
 {
     public static class TestXML
     {
-        public static void ProductTestSave()
-        {
-            Product product = new Product("Rice", false, 5, 6, MeasuringUnit.Kg);
+        //public static void ProductTestSave()
+        //{
+        //    Product product = new Product("Rice", false, 5, 6, MeasuringUnit.Kg);
 
-            XmlDocument doc = new XmlDocument();
-            XmlElement elem = doc.CreateElement("Product");
-            XmlElement name = doc.CreateElement("Name");
-            XmlText text = doc.CreateTextNode(product.Name);
-            name.AppendChild(text);
-            elem.AppendChild(name);
-            XmlElement price = doc.CreateElement("Price");
-            text = doc.CreateTextNode(product.Price.ToString());
-            price.AppendChild(text);
-            elem.AppendChild(price);
-            XmlElement obligatory = doc.CreateElement("Obligatory");
-            text = doc.CreateTextNode(product.Obligatory.ToString());
-            obligatory.AppendChild(text);
-            elem.AppendChild(obligatory);
+        //    XmlDocument doc = new XmlDocument();
+        //    XmlElement elem = doc.CreateElement("Product");
+        //    XmlElement name = doc.CreateElement("Name");
+        //    XmlText text = doc.CreateTextNode(product.Name);
+        //    name.AppendChild(text);
+        //    elem.AppendChild(name);
+        //    XmlElement price = doc.CreateElement("Price");
+        //    text = doc.CreateTextNode(product.Price.ToString());
+        //    price.AppendChild(text);
+        //    elem.AppendChild(price);
+        //    XmlElement obligatory = doc.CreateElement("Obligatory");
+        //    text = doc.CreateTextNode(product.Obligatory.ToString());
+        //    obligatory.AppendChild(text);
+        //    elem.AppendChild(obligatory);
 
-            doc.AppendChild(elem);
+        //    doc.AppendChild(elem);
 
             
-            doc.Save("product-test.xml");
-        }
+        //    doc.Save("product-test.xml");
+        //}
 
         public static void ProductsLoad()
         {

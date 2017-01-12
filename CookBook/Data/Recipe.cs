@@ -43,7 +43,7 @@ namespace CookBook.Data
             get; private set;
         }
 
-        public Recipe(string name, RecipeType kind) : base(name)
+        private Recipe(string name, RecipeType kind) : base(name)
         {
             this.thePreparations = new Preparations();
             this.theProducts = new Products();

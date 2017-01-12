@@ -73,14 +73,6 @@ namespace CookBook.Data
             this.Unit = unit;
         }
 
-        //Only for testing purposes
-        public Product(string name, bool? obligatory, decimal? price, decimal? quantity, MeasuringUnit? unit) 
-            : this(name, unit)
-        {
-            this.Obligatory = obligatory;
-            this.Price = price;
-            this.Quantity = quantity;
-        }
 
         public override string ToString()
         {
