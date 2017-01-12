@@ -189,4 +189,163 @@
     </Preparations>
     <RecipeKind>Salad</RecipeKind>
   </Recipe>
+  <Recipe>
+    <Name>Creme caramel</Name>
+    <Products>
+    	<Product>
+        <Name>sugar</Name>
+        <Price>1</Price>
+        <Quantity>160</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>butter</Name>
+        <Price>0,5</Price>
+        <Quantity>30</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>1,5</Price>
+        <Quantity>4</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>milk</Name>
+        <Price>0,50</Price>
+        <Quantity>600</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>vanilla extract</Name>
+        <Price>0,10</Price>
+        <Quantity>20</Quantity>
+        <Unit>MilliGram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Caramelize</Name>
+        <Duration>7</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Pour the sugar with some water in a stainless steel pan. Dissolve the sugar and boil until it becomes dark copper in colour.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cool</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Set aside and leave it to chill so it's not too hot and let it harden.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Make the custard</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Whisk the eggs and add vanilla if you want.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Prepare the ramekins</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Butter the ramekins so that the creme doesn't stick.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Prepare the milk and combine</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Pour the milk into a saucepan. Once it is slightly hot strain it through a fine sieve onto the egg mixture. Whisk together until smooth.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cook in the oven</Name>
+        <Duration>25</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Cook in the oven for about 20-30 minutes until the custard has set.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Take out and cool</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Take the creme caramels out of the oven, remove the ramekins and set them on a cooling rack.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Dessert</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Pizza Margherita</Name>
+    <Products>
+    	<Product>
+        <Name>flour</Name>
+        <Price>1,5</Price>
+        <Quantity>0,3</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>yeast</Name>
+        <Price>0,2</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>salt</Name>
+        <Price>0,3</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>olive oil</Name>
+        <Price>0,4</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>tomato sauce</Name>
+        <Price>3</Price>
+        <Quantity>200</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>Mozzarella</Name>
+        <Price>1,5</Price>
+        <Quantity>125</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Make the base</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Put the flour in a bowl, add in the salt and yeast. Pour 200 ml water and the olive oil and combine. Make a soft dough. Cover with a towel and leave it to rise.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Make the sauce</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Either get a ready-made tomato sauce or make your own using tomato puree, fresh basil and garlic cloves.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Roll the dough</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Roll the dough into large rounds, about 25 cm accross, using a rolling pin.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Top and bake</Name>
+        <Duration>15</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Put all the ingredients of the topping (Mozzarella etc.) and bake in a pre-heated oven at 240 degrees for about 10 minutes.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
 </Recipes>
