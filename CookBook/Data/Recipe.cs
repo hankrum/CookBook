@@ -63,6 +63,18 @@ namespace CookBook.Data
             return result;
         }
 
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendFormat(
+                "Name: {0}; Recipe kind: {1}; Price: {2}; Preparation time: {3}",
+                this.Name,
+                this.RecipeKind,
+                this.CalculatePrice(this.TheProducts),
+                this.CalculateDuration(this.ThePreparations));
+            return result.ToString();
+        }
+
         // Method to calculate the combined price of all the products that will be used in the recipe
         public decimal CalculatePrice(Products TheProducts)
         {
