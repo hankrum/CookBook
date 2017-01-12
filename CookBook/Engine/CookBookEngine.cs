@@ -1,4 +1,5 @@
 ﻿using CookBook.Data;
+using CookBook.Engine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Xml;
 
 namespace CookBook
 {
-    public static class Engine
+    public static class CookBookEngine
     {
         public static void Start()
         {
@@ -18,6 +19,9 @@ namespace CookBook
             doc.Load("recipes.xml");
             XmlNode rootNode = doc.DocumentElement;
             mainCollectionRecipes.LoadFromXML(rootNode);
+
+            StartScreen startScreen = new StartScreen();
+            startScreen.Activate();
         }
     }
 }
