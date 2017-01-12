@@ -348,4 +348,192 @@
     </Preparations>
     <RecipeKind>Main</RecipeKind>
   </Recipe>
+  <Recipe>
+    <Name>Beef Wellington</Name>
+    <Products>
+    	<Product>
+        <Name>beef fillet</Name>
+        <Price>8</Price>
+        <Quantity>1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>olive oil</Name>
+        <Price>0,3</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>puff pastry</Name>
+        <Price>2</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>0,50</Price>
+        <Quantity>1</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>Worcestershire sauce</Name>
+        <Price>0,30</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>mushrooms</Name>
+        <Price>1</Price>
+        <Quantity>200</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>gravy sauce</Name>
+        <Price>2</Price>
+        <Quantity>200</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Rinse and dry the meat</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Wash the meat and dry it using kitchen paper.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Prepare the pastry</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Roll the pastry to a rectangle, trim the edges. Wrap the ingredients inside it.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Refrigerate</Name>
+        <Duration>30</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Leave the pastry in the fridge so that it can chill for about 30 minutes.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cook in the oven</Name>
+        <Duration>35</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Bake in a pre-heated oven for 25 minutes if you want the meat to be rare, 30 mins for medium rare, 35 for medium and about 45 minutes for well-done.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Leave it to rest</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Self-explanatory.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Add the gravy sauce</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Add the sauce and any other ingredients that you might like.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Adana kebap</Name>
+    <Products>
+    	<Product>
+        <Name>lamb meat</Name>
+        <Price>8</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>chili peppers</Name>
+        <Price>0,3</Price>
+        <Quantity>2</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>cumin</Name>
+        <Price>0,2</Price>
+        <Quantity>2</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>sumac</Name>
+        <Price>0,2</Price>
+        <Quantity>2</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>cold water</Name>
+        <Price>0</Price>
+        <Quantity>2</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>0,5</Price>
+        <Quantity>2</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>lavash bread</Name>
+        <Price>0,5</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>Flase</Obligatory>
+      </Product>
+      <Product>
+        <Name>bulgur</Name>
+        <Price>1</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>tomato</Name>
+        <Price>1</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Combine the ingredients</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Mix the lamb minced meat with the spices and knead.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Divide the mixture</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Divide it into as many kebabs as you want to make.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Grill the kebabs</Name>
+        <Duration>12</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Cook directly over the hot side of a grill, turning occasionally.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Add garnish</Name>
+        <Duration>5</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Add tomatoes, peppers, bulgur, lavash bread or any other granish that you see as suitable.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
 </Recipes>
