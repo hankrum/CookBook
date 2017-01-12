@@ -85,7 +85,7 @@ namespace CookBook.Data
         {
             foreach (XmlNode recipeItem in item.ChildNodes)
             {
-                var nextRecipe = Recipe.Builder(recipeItem);
+                var nextRecipe = Recipe.Factory(recipeItem);
                 this.Add(nextRecipe);
             }
         }

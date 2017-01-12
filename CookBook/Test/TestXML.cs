@@ -50,7 +50,7 @@ namespace CookBook.Test
                 //decimal quantity = decimal.Parse(node["Quantity"].InnerText);
                 //bool obligatory = bool.Parse(node["Obligatory"].InnerText);
                 //MeasuringUnit unit = (MeasuringUnit)Enum.Parse(typeof(MeasuringUnit), node["Unit"].InnerText);
-                Product product = Product.Builder(node);
+                Product product = Product.Factory(node);
                 products.Add(product);
                 Console.WriteLine(product.ToString());
             }
@@ -65,7 +65,7 @@ namespace CookBook.Test
             XmlNode rootNode = doc.DocumentElement;
             foreach (XmlNode node in rootNode.ChildNodes)
             {
-                Preparation preparation = Preparation.Builder(node);
+                Preparation preparation = Preparation.Factory(node);
                 preparations.Add(preparation);
                 Console.WriteLine(preparation.ToString());
             }

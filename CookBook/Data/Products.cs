@@ -63,7 +63,7 @@ namespace CookBook.Data
 
             foreach (XmlNode node in item.ChildNodes)
             {
-                Product pItem = Product.Builder(node);
+                Product pItem = Product.Factory(node);
                 result.Add(pItem);
             }
 

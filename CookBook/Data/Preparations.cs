@@ -53,7 +53,7 @@ namespace CookBook.Data
 
             foreach (XmlNode node in item.ChildNodes)
             {
-                Preparation pItem = Preparation.Builder(node);
+                Preparation pItem = Preparation.Factory(node);
                 result.Add(pItem);
             }
 

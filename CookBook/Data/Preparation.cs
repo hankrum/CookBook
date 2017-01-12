@@ -67,7 +67,7 @@ namespace CookBook.Data
             return result.ToString();
         }
 
-        public static Preparation Builder(XmlNode item=null,
+        public static Preparation Factory(XmlNode item=null,
             string parName=null,
             int? parDuration=null,
             string parDescription=null, 
