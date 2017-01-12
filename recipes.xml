@@ -114,4 +114,79 @@
     </Preparations>
     <RecipeKind>Soup</RecipeKind>
   </Recipe>
+  <Recipe>
+    <Name>Shopska salad</Name>
+    <Products>
+    	<Product>
+        <Name>cucumbers</Name>
+        <Price>2,5</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>tomatoes</Name>
+        <Price>3</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>white cheese</Name>
+        <Price>1</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+    <Name>peppers</Name>
+        <Price>0,5</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>onion</Name>
+        <Price>0.3</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+      <Name>olive oil</Name>
+        <Price>0,5</Price>
+        <Quantity>30</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>salt</Name>
+        <Price>0,1</Price>
+        <Quantity>10</Quantity>
+        <Unit>MilliGram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Combine</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Combine all the ingredients</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Grate</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Grate the cheese</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Salad</RecipeKind>
+  </Recipe>
 </Recipes>

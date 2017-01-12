@@ -89,13 +89,13 @@ namespace CookBook.Data
         }
 
         // Method to calculate the time needed to prepare the recipe
-        public double CalculateDuration(Preparations ThePreparation)
+        public int CalculateDuration(Preparations ThePreparation)
         {
-            double timeNeeded = 0;
+            int timeNeeded = 0;
 
             foreach (var item in ThePreparation.PreparationList)
             {
-                timeNeeded += (double)item.Duration;
+                timeNeeded += (int)item.Duration;
             }
 
             return timeNeeded;
