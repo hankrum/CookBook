@@ -536,4 +536,79 @@
     </Preparations>
     <RecipeKind>Main</RecipeKind>
   </Recipe>
+  <Recipe>
+      <Name>Pancakes</Name>
+    <Products>
+    <Product>
+      <Name>Eggs</Name>
+      <Price>0.25</Price>
+      <Quantity>3</Quantity>
+      <Unit>Piece</Unit>
+      <Obligatory>True</Obligatory>
+    </Product>
+    <Product>
+      <Name>Milk</Name>
+      <Price>1.6</Price>
+      <Quantity>0.4</Quantity>
+      <Unit>L</Unit>
+      <Obligatory>True</Obligatory>
+    </Product>
+    <Product>
+      <Name>Flour</Name>
+      <Price>0.2</Price>
+      <Quantity>4</Quantity>
+      <Unit>Tablespoon</Unit>
+      <Obligatory>True</Obligatory>
+    </Product>
+    <Product>
+      <Name>Sugar</Name>
+      <Price>0,2</Price>
+      <Quantity>2</Quantity>
+      <Unit>Tablespoon</Unit>
+      <Obligatory>False</Obligatory>
+    </Product>
+    <Product>
+      <Name>Salt</Name>
+      <Price>0,2</Price>
+      <Quantity>2</Quantity>
+      <Unit>Tablespoon</Unit>
+      <Obligatory>False</Obligatory>
+    </Product>
+    <Product>
+      <Name>Walnut</Name>
+      <Price>10</Price>
+      <Quantity>0.1</Quantity>
+      <Unit>Kg</Unit>
+      <Obligatory>False</Obligatory>
+    </Product>
+  </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Break the eggs</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Break the eggs and put em in a bow(no shells pls).</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix everything</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Make a mixture strating with eggs then add milk and after that add flour.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Make a good mixture</Name>
+        <Duration>4</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Keep mixing untill you get a homogeneous mixture. If you want you can add sugar or salt.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake the pancakes</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Put enough mixture in a pan to cover its bottom. Wait the mixture to change colour and then 
+        flip the pancake to its uncooked side like the profesional chef you have become after reading this recipe.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
 </Recipes>
