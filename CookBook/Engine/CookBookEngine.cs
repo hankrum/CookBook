@@ -20,8 +20,15 @@ namespace CookBook
             XmlNode rootNode = doc.DocumentElement;
             mainCollectionRecipes.LoadFromXML(rootNode);
 
-            StartScreen startScreen = new StartScreen();
-            startScreen.Activate();
+            StartScreen startScreen = new StartScreen(mainCollectionRecipes);
+            startScreen.ShowDialog();
+        }
+
+
+
+        public static void DisplayRecipes(Recipes collection)
+        {
+
         }
     }
 }

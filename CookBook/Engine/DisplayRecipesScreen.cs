@@ -1,5 +1,4 @@
-﻿using CookBook.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +10,14 @@ using System.Windows.Forms;
 
 namespace CookBook.Engine
 {
-    public partial class StartScreen : Form
+    public partial class DisplayRecipesScreen : Form
     {
-        public StartScreen(Recipes collection)
+        public DisplayRecipesScreen(string title, string text)
         {
             InitializeComponent();
-            RecipesDisplay.Text = collection.ToString();
-        }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
+            DisplayRecipesHeading.Text = title;
+            DisplayRecipesText.Text = text;
         }
     }
 }
