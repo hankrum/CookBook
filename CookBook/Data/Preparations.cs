@@ -63,7 +63,7 @@ namespace CookBook.Data
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            result.Append("Preparations:\n");
+            result.AppendLine("Preparations:");
             foreach (var preparation in this.PreparationList)
             {
                 result.Append(preparation.ToString());

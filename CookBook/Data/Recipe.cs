@@ -66,14 +66,15 @@ namespace CookBook.Data
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
+            result.AppendLine("Recipe:");
             result.AppendFormat(
-                "Name: {0};\n \tRecipe kind: {1};\n Price: {2};\n Preparation time: {3};\n",
+                "Name: {0};  Recipe kind: {1};  Price: {2};  Preparation time: {3};",
                 this.Name,
                 this.RecipeKind,
                 this.CalculatePrice(this.TheProducts),
-                this.CalculateDuration(this.ThePreparations));
+                this.CalculateDuration(this.ThePreparations)).AppendLine();
             result.Append(this.TheProducts.ToString());
-            result.Append(this.ThePreparations.ToString());
+            result.Append(this.ThePreparations.ToString()).AppendLine();
             return result.ToString();
         }
 

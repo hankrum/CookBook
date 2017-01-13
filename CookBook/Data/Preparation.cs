@@ -62,7 +62,7 @@ namespace CookBook.Data
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            result.AppendFormat($"\t{this.Name}, duration: {this.Duration}, description: {this.Description}\n");
+            result.AppendFormat($"\t{this.Name}, duration: {this.Duration}, description: {this.Description}").AppendLine();
 
             return result.ToString();
         }
