@@ -67,11 +67,13 @@ namespace CookBook.Data
         {
             StringBuilder result = new StringBuilder();
             result.AppendFormat(
-                "Name: {0}; Recipe kind: {1}; Price: {2}; Preparation time: {3}",
+                "Name: {0};\n Recipe kind: {1};\n Price: {2};\n Preparation time: {3};\n Products: {4};\n Recipe: {5};",
                 this.Name,
                 this.RecipeKind,
                 this.CalculatePrice(this.TheProducts),
-                this.CalculateDuration(this.ThePreparations));
+                this.CalculateDuration(this.ThePreparations),
+                this.AddProducts(this.theProducts),
+                this.AddRecipeSteps(this.thePreparations));
             return result.ToString();
         }
 
@@ -100,5 +102,28 @@ namespace CookBook.Data
 
             return timeNeeded;
         }
+        public string AddRecipeSteps(Preparations ThePreparation)
+        {
+            string fullRecipe = " ";
+
+            foreach (var item in ThePreparation.PreparationList)
+            {
+                fullRecipe += (string)item.Description;
+            }
+
+            return fullRecipe;
+        }
+        public string AddProducts(Products TheProducts)
+        {
+            string allProducts = "+";
+
+            foreach (var item in TheProducts.ProductsList)
+            {
+                allProducts += (string)item.Name + "+" ;
+            }
+
+            return allProducts;
+        }
+
     }
 }
