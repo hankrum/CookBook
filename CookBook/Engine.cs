@@ -18,6 +18,7 @@ namespace CookBook
             doc.Load("recipes.xml");
             XmlNode rootNode = doc.DocumentElement;
             mainCollectionRecipes.LoadFromXML(rootNode);
+
         }
     }
 }
