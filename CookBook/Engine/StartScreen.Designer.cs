@@ -63,9 +63,13 @@
             // 
             // RecipesDisplay
             // 
+            this.RecipesDisplay.AcceptsReturn = true;
+            this.RecipesDisplay.AcceptsTab = true;
             this.RecipesDisplay.Location = new System.Drawing.Point(12, 112);
+            this.RecipesDisplay.Multiline = true;
             this.RecipesDisplay.Name = "RecipesDisplay";
-            this.RecipesDisplay.Size = new System.Drawing.Size(1467, 22);
+            this.RecipesDisplay.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.RecipesDisplay.Size = new System.Drawing.Size(1467, 561);
             this.RecipesDisplay.TabIndex = 2;
             // 
             // ProductLabel
