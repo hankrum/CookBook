@@ -78,7 +78,7 @@ namespace CookBook.Data
         {
             StringBuilder result = new StringBuilder();
             result.AppendFormat(
-                "{0} {1} {2}", 
+                "\t{0} {1} {2}\n", 
                 this.Name,
                 this.Quantity != null ? $", Quantity: {this.Quantity.ToString()} {this.Unit}, " : GlobalConstants.EmptyString,
                 this.Price != null ? $"Price: {this.Price.ToString()}" : GlobalConstants.EmptyString);

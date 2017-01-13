@@ -69,5 +69,16 @@ namespace CookBook.Data
 
             return result;
         }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.Append("Products:\n");
+            foreach (var product in this.ProductsList)
+            {
+                result.Append(product.ToString());
+            }
+            return result.ToString();
+        }
     }
 }
