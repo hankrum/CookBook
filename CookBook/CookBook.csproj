@@ -63,6 +63,7 @@
     <Compile Include="Data\Preparations.cs" />
     <Compile Include="Data\Product.cs" />
     <Compile Include="Data\Products.cs" />
+    <Compile Include="Data\Query.cs" />
     <Compile Include="Data\Recipe.cs" />
     <Compile Include="Data\Recipes.cs" />
     <Compile Include="Engine\CookBookEngine.cs" />

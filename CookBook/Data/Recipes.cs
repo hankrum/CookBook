@@ -18,6 +18,11 @@ namespace CookBook.Data
             this.theRecipes = new List<Recipe>();
         }
 
+        public Recipes(List<Recipe> collection)
+        {
+            this.TheRecipes = collection;
+        }
+
         public List<Recipe> TheRecipes
         {
             get
@@ -41,42 +46,12 @@ namespace CookBook.Data
             throw new NotImplementedException();
         }
 
-        public void LoadFromFile()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<IRecipe> QueryByName(string Name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<IRecipe> QueryByProduct(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<IRecipe> QueryByProduct(IProduct product)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<IRecipe> QueryByType(RecipeType recipeType)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Remove<T>(string name)
         {
             throw new NotImplementedException();
         }
 
         public void Remove<T>(T item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SaveToFile()
         {
             throw new NotImplementedException();
         }

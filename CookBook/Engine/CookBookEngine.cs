@@ -19,6 +19,7 @@ namespace CookBook
             doc.Load("recipes.xml");
             XmlNode rootNode = doc.DocumentElement;
             mainCollectionRecipes.LoadFromXML(rootNode);
+            // var queryByProduct = mainCollectionRecipes.ByProduct("yoghurt");
 
             StartScreen startScreen = new StartScreen(mainCollectionRecipes);
             startScreen.ShowDialog();
