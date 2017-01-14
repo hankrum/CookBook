@@ -39,8 +39,8 @@
             this.TypeComboBox = new System.Windows.Forms.ComboBox();
             this.PriceLabel = new System.Windows.Forms.Label();
             this.PriceTextBox = new System.Windows.Forms.TextBox();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.nameComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +56,7 @@
             // 
             // OKButton
             // 
-            this.OKButton.Location = new System.Drawing.Point(1308, 76);
+            this.OKButton.Location = new System.Drawing.Point(1308, 70);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(114, 33);
             this.OKButton.TabIndex = 1;
@@ -140,13 +140,6 @@
             this.PriceTextBox.Size = new System.Drawing.Size(100, 22);
             this.PriceTextBox.TabIndex = 10;
             // 
-            // nameTextBox
-            // 
-            this.nameTextBox.Location = new System.Drawing.Point(42, 81);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(447, 22);
-            this.nameTextBox.TabIndex = 11;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -156,13 +149,21 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Recipe name";
             // 
+            // nameComboBox
+            // 
+            this.nameComboBox.FormattingEnabled = true;
+            this.nameComboBox.Location = new System.Drawing.Point(22, 81);
+            this.nameComboBox.Name = "nameComboBox";
+            this.nameComboBox.Size = new System.Drawing.Size(458, 24);
+            this.nameComboBox.TabIndex = 13;
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1491, 685);
+            this.Controls.Add(this.nameComboBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.PriceTextBox);
             this.Controls.Add(this.PriceLabel);
             this.Controls.Add(this.TypeComboBox);
@@ -194,7 +195,7 @@
         private System.Windows.Forms.Label PriceLabel;
         private System.Windows.Forms.TextBox PriceTextBox;
         private System.Windows.Forms.ComboBox TypeComboBox;
-        private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox nameComboBox;
     }
 }
