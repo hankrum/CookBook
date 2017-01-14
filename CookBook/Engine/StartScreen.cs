@@ -28,9 +28,9 @@ namespace CookBook.Engine
             TypeComboBox.DataSource = types;
 
             var recipeNames =
-                from item in this.Collection.TheRecipes
+                from item in this.Collection.SortByTypeThenbyName().TheRecipes
                 select item.Name;
-            var recipeNamesList = recipeNames.Distinct().OrderBy(x => x).ToList();
+            var recipeNamesList = recipeNames.Distinct().ToList();
             recipeNamesList.Insert(0, "");
             nameComboBox.DataSource = recipeNamesList;
         }

@@ -18,12 +18,13 @@ namespace CookBook.Data
             return result;
         }
 
-        public static Recipes SortByType(this Recipes collection)
+        public static Recipes SortByTypeThenbyName(this Recipes collection)
         {
-            var query =
-                from recipe in collection.TheRecipes
-                orderby recipe.RecipeKind
-                select recipe;
+            var query = collection.TheRecipes.OrderBy(x => x.RecipeKind).ThenBy(x => x.Name);
+                //from recipe in collection.TheRecipes
+                //orderby recipe.RecipeKind
+                //orderby recipe.Name
+                //select recipe;
             Recipes result = new Recipes(query.ToList<Recipe>());
             return result;
         }
