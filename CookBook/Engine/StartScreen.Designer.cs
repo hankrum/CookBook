@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.AllRecipesButton = new System.Windows.Forms.Button();
+            this.OKButton = new System.Windows.Forms.Button();
             this.RecipesDisplay = new System.Windows.Forms.TextBox();
             this.ProductLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.productTextBox = new System.Windows.Forms.TextBox();
             this.DurationLabel = new System.Windows.Forms.Label();
             this.DurationTextBox = new System.Windows.Forms.TextBox();
             this.RecipeTypeLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TypeComboBox = new System.Windows.Forms.ComboBox();
             this.PriceLabel = new System.Windows.Forms.Label();
             this.PriceTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -52,14 +52,15 @@
             this.label1.Text = "Welcome to your Cook Book";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // AllRecipesButton
+            // OKButton
             // 
-            this.AllRecipesButton.Location = new System.Drawing.Point(1365, 76);
-            this.AllRecipesButton.Name = "AllRecipesButton";
-            this.AllRecipesButton.Size = new System.Drawing.Size(114, 33);
-            this.AllRecipesButton.TabIndex = 1;
-            this.AllRecipesButton.Text = "All recipes";
-            this.AllRecipesButton.UseVisualStyleBackColor = true;
+            this.OKButton.Location = new System.Drawing.Point(1000, 9);
+            this.OKButton.Name = "OKButton";
+            this.OKButton.Size = new System.Drawing.Size(114, 33);
+            this.OKButton.TabIndex = 1;
+            this.OKButton.Text = "OK";
+            this.OKButton.UseVisualStyleBackColor = true;
+            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // RecipesDisplay
             // 
@@ -75,23 +76,23 @@
             // ProductLabel
             // 
             this.ProductLabel.AutoSize = true;
-            this.ProductLabel.Location = new System.Drawing.Point(30, 61);
+            this.ProductLabel.Location = new System.Drawing.Point(61, 61);
             this.ProductLabel.Name = "ProductLabel";
             this.ProductLabel.Size = new System.Drawing.Size(57, 17);
             this.ProductLabel.TabIndex = 3;
             this.ProductLabel.Text = "Product";
             // 
-            // textBox1
+            // productTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 22);
-            this.textBox1.TabIndex = 4;
+            this.productTextBox.Location = new System.Drawing.Point(12, 81);
+            this.productTextBox.Name = "productTextBox";
+            this.productTextBox.Size = new System.Drawing.Size(162, 22);
+            this.productTextBox.TabIndex = 4;
             // 
             // DurationLabel
             // 
             this.DurationLabel.AutoSize = true;
-            this.DurationLabel.Location = new System.Drawing.Point(393, 61);
+            this.DurationLabel.Location = new System.Drawing.Point(400, 61);
             this.DurationLabel.Name = "DurationLabel";
             this.DurationLabel.Size = new System.Drawing.Size(140, 17);
             this.DurationLabel.TabIndex = 5;
@@ -99,7 +100,7 @@
             // 
             // DurationTextBox
             // 
-            this.DurationTextBox.Location = new System.Drawing.Point(396, 81);
+            this.DurationTextBox.Location = new System.Drawing.Point(418, 81);
             this.DurationTextBox.Name = "DurationTextBox";
             this.DurationTextBox.Size = new System.Drawing.Size(100, 22);
             this.DurationTextBox.TabIndex = 6;
@@ -107,19 +108,19 @@
             // RecipeTypeLabel
             // 
             this.RecipeTypeLabel.AutoSize = true;
-            this.RecipeTypeLabel.Location = new System.Drawing.Point(211, 58);
+            this.RecipeTypeLabel.Location = new System.Drawing.Point(244, 61);
             this.RecipeTypeLabel.Name = "RecipeTypeLabel";
             this.RecipeTypeLabel.Size = new System.Drawing.Size(83, 17);
             this.RecipeTypeLabel.TabIndex = 7;
             this.RecipeTypeLabel.Text = "Recipe type";
             // 
-            // comboBox1
+            // TypeComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(193, 81);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(186, 24);
-            this.comboBox1.TabIndex = 8;
+            this.TypeComboBox.FormattingEnabled = true;
+            this.TypeComboBox.Location = new System.Drawing.Point(193, 81);
+            this.TypeComboBox.Name = "TypeComboBox";
+            this.TypeComboBox.Size = new System.Drawing.Size(186, 24);
+            this.TypeComboBox.TabIndex = 8;
             // 
             // PriceLabel
             // 
@@ -144,14 +145,14 @@
             this.ClientSize = new System.Drawing.Size(1491, 685);
             this.Controls.Add(this.PriceTextBox);
             this.Controls.Add(this.PriceLabel);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.TypeComboBox);
             this.Controls.Add(this.RecipeTypeLabel);
             this.Controls.Add(this.DurationTextBox);
             this.Controls.Add(this.DurationLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.productTextBox);
             this.Controls.Add(this.ProductLabel);
             this.Controls.Add(this.RecipesDisplay);
-            this.Controls.Add(this.AllRecipesButton);
+            this.Controls.Add(this.OKButton);
             this.Controls.Add(this.label1);
             this.Name = "StartScreen";
             this.Text = "StartScreen";
@@ -163,15 +164,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button AllRecipesButton;
+        private System.Windows.Forms.Button OKButton;
         private System.Windows.Forms.TextBox RecipesDisplay;
         private System.Windows.Forms.Label ProductLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox productTextBox;
         private System.Windows.Forms.Label DurationLabel;
         private System.Windows.Forms.TextBox DurationTextBox;
         private System.Windows.Forms.Label RecipeTypeLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label PriceLabel;
         private System.Windows.Forms.TextBox PriceTextBox;
+        private System.Windows.Forms.ComboBox TypeComboBox;
     }
 }

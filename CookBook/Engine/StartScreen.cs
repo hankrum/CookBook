@@ -1,4 +1,5 @@
-﻿using CookBook.Data;
+﻿using CookBook.Common;
+using CookBook.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,15 +14,32 @@ namespace CookBook.Engine
 {
     public partial class StartScreen : Form
     {
+        protected Recipes Collection { get; set; }
+
         public StartScreen(Recipes collection)
         {
             InitializeComponent();
-            RecipesDisplay.Text = collection.ToString();
+            this.Collection = collection;
+            RecipesDisplay.Text = Collection.ToString();
+
+            var types = Enum.GetNames(typeof(RecipeType)).ToList();
+            types.Insert(0, String.Empty);
+            TypeComboBox.DataSource = types;
         }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+            if (productTextBox.Text!=null)
+            {
+                RecipesDisplay.Text = Collection.ByProduct(productTextBox.Text).ToString();
+            }
         }
     }
 }
