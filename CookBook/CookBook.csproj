@@ -67,12 +67,6 @@
     <Compile Include="Data\Recipe.cs" />
     <Compile Include="Data\Recipes.cs" />
     <Compile Include="Engine\CookBookEngine.cs" />
-    <Compile Include="Engine\DisplayRecipesScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Engine\DisplayRecipesScreen.Designer.cs">
-      <DependentUpon>DisplayRecipesScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Engine\StartScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,9 +81,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Engine\DisplayRecipesScreen.resx">
-      <DependentUpon>DisplayRecipesScreen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Engine\StartScreen.resx">
       <DependentUpon>StartScreen.cs</DependentUpon>
     </EmbeddedResource>

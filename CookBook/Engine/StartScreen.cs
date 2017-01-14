@@ -21,6 +21,7 @@ namespace CookBook.Engine
             InitializeComponent();
             this.Collection = collection;
             RecipesDisplay.Text = Collection.ToString();
+            RecipesDisplay.ReadOnly = true;
 
             var types = Enum.GetNames(typeof(RecipeType)).ToList();
             types.Insert(0, String.Empty);

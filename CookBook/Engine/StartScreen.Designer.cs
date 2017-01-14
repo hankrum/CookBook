@@ -39,6 +39,8 @@
             this.TypeComboBox = new System.Windows.Forms.ComboBox();
             this.PriceLabel = new System.Windows.Forms.Label();
             this.PriceTextBox = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +56,7 @@
             // 
             // OKButton
             // 
-            this.OKButton.Location = new System.Drawing.Point(1000, 9);
+            this.OKButton.Location = new System.Drawing.Point(1308, 76);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(114, 33);
             this.OKButton.TabIndex = 1;
@@ -76,7 +78,7 @@
             // ProductLabel
             // 
             this.ProductLabel.AutoSize = true;
-            this.ProductLabel.Location = new System.Drawing.Point(61, 61);
+            this.ProductLabel.Location = new System.Drawing.Point(574, 61);
             this.ProductLabel.Name = "ProductLabel";
             this.ProductLabel.Size = new System.Drawing.Size(57, 17);
             this.ProductLabel.TabIndex = 3;
@@ -84,7 +86,7 @@
             // 
             // productTextBox
             // 
-            this.productTextBox.Location = new System.Drawing.Point(12, 81);
+            this.productTextBox.Location = new System.Drawing.Point(521, 81);
             this.productTextBox.Name = "productTextBox";
             this.productTextBox.Size = new System.Drawing.Size(162, 22);
             this.productTextBox.TabIndex = 4;
@@ -92,7 +94,7 @@
             // DurationLabel
             // 
             this.DurationLabel.AutoSize = true;
-            this.DurationLabel.Location = new System.Drawing.Point(400, 61);
+            this.DurationLabel.Location = new System.Drawing.Point(929, 61);
             this.DurationLabel.Name = "DurationLabel";
             this.DurationLabel.Size = new System.Drawing.Size(140, 17);
             this.DurationLabel.TabIndex = 5;
@@ -100,7 +102,7 @@
             // 
             // DurationTextBox
             // 
-            this.DurationTextBox.Location = new System.Drawing.Point(418, 81);
+            this.DurationTextBox.Location = new System.Drawing.Point(950, 81);
             this.DurationTextBox.Name = "DurationTextBox";
             this.DurationTextBox.Size = new System.Drawing.Size(100, 22);
             this.DurationTextBox.TabIndex = 6;
@@ -108,7 +110,7 @@
             // RecipeTypeLabel
             // 
             this.RecipeTypeLabel.AutoSize = true;
-            this.RecipeTypeLabel.Location = new System.Drawing.Point(244, 61);
+            this.RecipeTypeLabel.Location = new System.Drawing.Point(776, 61);
             this.RecipeTypeLabel.Name = "RecipeTypeLabel";
             this.RecipeTypeLabel.Size = new System.Drawing.Size(83, 17);
             this.RecipeTypeLabel.TabIndex = 7;
@@ -117,7 +119,7 @@
             // TypeComboBox
             // 
             this.TypeComboBox.FormattingEnabled = true;
-            this.TypeComboBox.Location = new System.Drawing.Point(193, 81);
+            this.TypeComboBox.Location = new System.Drawing.Point(725, 81);
             this.TypeComboBox.Name = "TypeComboBox";
             this.TypeComboBox.Size = new System.Drawing.Size(186, 24);
             this.TypeComboBox.TabIndex = 8;
@@ -125,7 +127,7 @@
             // PriceLabel
             // 
             this.PriceLabel.AutoSize = true;
-            this.PriceLabel.Location = new System.Drawing.Point(575, 61);
+            this.PriceLabel.Location = new System.Drawing.Point(1099, 61);
             this.PriceLabel.Name = "PriceLabel";
             this.PriceLabel.Size = new System.Drawing.Size(68, 17);
             this.PriceLabel.TabIndex = 9;
@@ -133,16 +135,34 @@
             // 
             // PriceTextBox
             // 
-            this.PriceTextBox.Location = new System.Drawing.Point(555, 81);
+            this.PriceTextBox.Location = new System.Drawing.Point(1084, 81);
             this.PriceTextBox.Name = "PriceTextBox";
             this.PriceTextBox.Size = new System.Drawing.Size(100, 22);
             this.PriceTextBox.TabIndex = 10;
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(42, 81);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(447, 22);
+            this.nameTextBox.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(215, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 17);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Recipe name";
             // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1491, 685);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.PriceTextBox);
             this.Controls.Add(this.PriceLabel);
             this.Controls.Add(this.TypeComboBox);
@@ -174,5 +194,7 @@
         private System.Windows.Forms.Label PriceLabel;
         private System.Windows.Forms.TextBox PriceTextBox;
         private System.Windows.Forms.ComboBox TypeComboBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Label label2;
     }
 }
