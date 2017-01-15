@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CookBook.Common.GlobalConstants" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\GlobalConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Common.Validation" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAIAAAAAAAAAAAAAAAQAAAAAAAAgAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Validation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Data.NamedObject" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\NamedObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CookBook.Data.Preparation" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAiAAAEIAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Data\Preparation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CookBook.Data.Preparations" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEAAAABAgAAAAICAAACAAAAAAAAAA=</HashCode>
+      <FileName>Data\Preparations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Data.Product" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAgAAAEIAAAAAAAAAAAAACAAAAAggAAAAI=</HashCode>
+      <FileName>Data\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CookBook.Data.Products" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEAAAABAgAQAAACAAAAAAABAAAAAA=</HashCode>
+      <FileName>Data\Products.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Data.Query" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAAAAAAAAAAAAAAAEAACAAABAAAAMAAAAg=</HashCode>
+      <FileName>Data\Query.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Data.Recipe" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgBAAAAAAEIAAAAAAgAAAAAAYAAQAEAAAAAAA=</HashCode>
+      <FileName>Data\Recipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Data.Recipes" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACAAAAAAAAEAAAABAAAAQAACAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Data\Recipes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.CookBookEngine" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\CookBookEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Startup" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CookBook.Engine.StartScreen" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkCAAQEACAAABAABACAAEACAAAADAgCgAQJAAAQAAA=</HashCode>
+      <FileName>Engine\StartScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CookBook.Contracts.IEditable" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IEditable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CookBook.Contracts.INamed" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\INamed.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CookBook.Contracts.IPreparation" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAiAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Contracts\IPreparation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CookBook.Contracts.IPreparations" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Contracts\IPreparations.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CookBook.Contracts.IProduct" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAIAAAAAAAAAAAAAAAAAAAggAAAAA=</HashCode>
+      <FileName>Contracts\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CookBook.Contracts.IProducts" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IProducts.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CookBook.Contracts.IRecipe" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAY=</HashCode>
+      <FileName>Contracts\IRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CookBook.Contracts.IRecipes" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAACAAAAIAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Contracts\IRecipes.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CookBook.Common.MeasuringUnit" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQEAAAAAAAAAAAAAQACACAAAAAACABAIAQAAAA=</HashCode>
+      <FileName>Common\MeasuringUnit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CookBook.Common.RecipeType" Collapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAACAAQgAAAAAAAAAAAAAhAAAAAA=</HashCode>
+      <FileName>Common\RecipeType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
