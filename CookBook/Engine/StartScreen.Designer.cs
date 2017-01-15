@@ -100,6 +100,7 @@
             this.DurationTextBox.Name = "DurationTextBox";
             this.DurationTextBox.Size = new System.Drawing.Size(100, 22);
             this.DurationTextBox.TabIndex = 6;
+            this.DurationTextBox.Leave += new System.EventHandler(this.DurationTextBox_Leave);
             // 
             // RecipeTypeLabel
             // 
@@ -112,6 +113,7 @@
             // 
             // TypeComboBox
             // 
+            this.TypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TypeComboBox.FormattingEnabled = true;
             this.TypeComboBox.Location = new System.Drawing.Point(725, 81);
             this.TypeComboBox.Name = "TypeComboBox";
@@ -133,6 +135,7 @@
             this.PriceTextBox.Name = "PriceTextBox";
             this.PriceTextBox.Size = new System.Drawing.Size(100, 22);
             this.PriceTextBox.TabIndex = 10;
+            this.PriceTextBox.Leave += new System.EventHandler(this.PriceTextBox_Leave);
             // 
             // label2
             // 
@@ -145,6 +148,7 @@
             // 
             // nameComboBox
             // 
+            this.nameComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.nameComboBox.FormattingEnabled = true;
             this.nameComboBox.Location = new System.Drawing.Point(22, 81);
             this.nameComboBox.Name = "nameComboBox";
@@ -153,6 +157,7 @@
             // 
             // productComboBox
             // 
+            this.productComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.productComboBox.FormattingEnabled = true;
             this.productComboBox.Location = new System.Drawing.Point(513, 81);
             this.productComboBox.Name = "productComboBox";

@@ -78,5 +78,23 @@ namespace CookBook.Engine
 
             RecipesDisplay.Text = recipesToDisplay.ToString();
         }
+
+        private void DurationTextBox_Leave(object sender, EventArgs e)
+        {
+            int some;
+            if (!int.TryParse(DurationTextBox.Text, out some))
+            {
+                DurationTextBox.Text = String.Empty;
+            }
+        }
+
+        private void PriceTextBox_Leave(object sender, EventArgs e)
+        {
+            int some;
+            if (!int.TryParse(PriceTextBox.Text, out some))
+            {
+                PriceTextBox.Text = String.Empty;
+            }
+        }
     }
 }
