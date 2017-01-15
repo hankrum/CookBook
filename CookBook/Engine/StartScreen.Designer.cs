@@ -32,7 +32,6 @@
             this.OKButton = new System.Windows.Forms.Button();
             this.RecipesDisplay = new System.Windows.Forms.TextBox();
             this.ProductLabel = new System.Windows.Forms.Label();
-            this.productTextBox = new System.Windows.Forms.TextBox();
             this.DurationLabel = new System.Windows.Forms.Label();
             this.DurationTextBox = new System.Windows.Forms.TextBox();
             this.RecipeTypeLabel = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.PriceTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.nameComboBox = new System.Windows.Forms.ComboBox();
+            this.productComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -68,6 +68,7 @@
             // 
             this.RecipesDisplay.AcceptsReturn = true;
             this.RecipesDisplay.AcceptsTab = true;
+            this.RecipesDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RecipesDisplay.Location = new System.Drawing.Point(12, 112);
             this.RecipesDisplay.Multiline = true;
             this.RecipesDisplay.Name = "RecipesDisplay";
@@ -83,13 +84,6 @@
             this.ProductLabel.Size = new System.Drawing.Size(57, 17);
             this.ProductLabel.TabIndex = 3;
             this.ProductLabel.Text = "Product";
-            // 
-            // productTextBox
-            // 
-            this.productTextBox.Location = new System.Drawing.Point(521, 81);
-            this.productTextBox.Name = "productTextBox";
-            this.productTextBox.Size = new System.Drawing.Size(162, 22);
-            this.productTextBox.TabIndex = 4;
             // 
             // DurationLabel
             // 
@@ -157,11 +151,20 @@
             this.nameComboBox.Size = new System.Drawing.Size(458, 24);
             this.nameComboBox.TabIndex = 13;
             // 
+            // productComboBox
+            // 
+            this.productComboBox.FormattingEnabled = true;
+            this.productComboBox.Location = new System.Drawing.Point(513, 81);
+            this.productComboBox.Name = "productComboBox";
+            this.productComboBox.Size = new System.Drawing.Size(181, 24);
+            this.productComboBox.TabIndex = 14;
+            // 
             // StartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1491, 685);
+            this.Controls.Add(this.productComboBox);
             this.Controls.Add(this.nameComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PriceTextBox);
@@ -170,7 +173,6 @@
             this.Controls.Add(this.RecipeTypeLabel);
             this.Controls.Add(this.DurationTextBox);
             this.Controls.Add(this.DurationLabel);
-            this.Controls.Add(this.productTextBox);
             this.Controls.Add(this.ProductLabel);
             this.Controls.Add(this.RecipesDisplay);
             this.Controls.Add(this.OKButton);
@@ -188,7 +190,6 @@
         private System.Windows.Forms.Button OKButton;
         private System.Windows.Forms.TextBox RecipesDisplay;
         private System.Windows.Forms.Label ProductLabel;
-        private System.Windows.Forms.TextBox productTextBox;
         private System.Windows.Forms.Label DurationLabel;
         private System.Windows.Forms.TextBox DurationTextBox;
         private System.Windows.Forms.Label RecipeTypeLabel;
@@ -197,5 +198,6 @@
         private System.Windows.Forms.ComboBox TypeComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox nameComboBox;
+        private System.Windows.Forms.ComboBox productComboBox;
     }
 }

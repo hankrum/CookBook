@@ -39,5 +39,10 @@ namespace CookBook.Common
                 throw new ArgumentNullException("Object cannot be null");
             }
         }
+
+        public static bool IsNotNullAndNotEmpty(this string text)
+        {
+            return text != null && text != String.Empty;
+        }
     }
 }

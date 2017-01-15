@@ -71,19 +71,19 @@ namespace CookBook.Data
                 "Name: {0};  Recipe kind: {1};  Price: {2};  Preparation time: {3};",
                 this.Name,
                 this.RecipeKind,
-                this.CalculatePrice(this.TheProducts),
-                this.CalculateDuration(this.ThePreparations)).AppendLine();
+                this.CalculatePrice(),
+                this.CalculateDuration()).AppendLine();
             result.Append(this.TheProducts.ToString());
             result.Append(this.ThePreparations.ToString()).AppendLine();
             return result.ToString();
         }
 
         // Method to calculate the combined price of all the products that will be used in the recipe
-        public decimal CalculatePrice(Products TheProducts)
+        public decimal CalculatePrice()
         {
             decimal finalPrice = 0;
 
-            foreach (var item in TheProducts.ProductsList)
+            foreach (var item in this.TheProducts.ProductsList)
             {
                 finalPrice += (decimal)item.Price;
             }
@@ -92,11 +92,11 @@ namespace CookBook.Data
         }
 
         // Method to calculate the time needed to prepare the recipe
-        public int CalculateDuration(Preparations ThePreparation)
+        public int CalculateDuration()
         {
             int timeNeeded = 0;
 
-            foreach (var item in ThePreparation.PreparationList)
+            foreach (var item in this.ThePreparations.PreparationList)
             {
                 timeNeeded += (int)item.Duration;
             }

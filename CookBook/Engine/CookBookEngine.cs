@@ -21,7 +21,7 @@ namespace CookBook
             mainCollectionRecipes.LoadFromXML(rootNode);
             // var queryByProduct = mainCollectionRecipes.ByProduct("yoghurt");
 
-            StartScreen startScreen = new StartScreen(mainCollectionRecipes.SortByTypeThenbyName());
+            StartScreen startScreen = new StartScreen(mainCollectionRecipes);
             startScreen.ShowDialog();
         }
 
