@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace CookBook.Contracts
 {
-    public interface IProducts : IRecordable, IEditable
+    public interface IProducts : IEditable
     {
         IList<IProduct> ProductsList { get; }
     }

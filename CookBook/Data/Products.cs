@@ -1,10 +1,7 @@
 ﻿using CookBook.Common;
-using CookBook.Contracts;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace CookBook.Data
@@ -37,22 +34,12 @@ namespace CookBook.Data
             this.products.RemoveAll(x=>true);
         }
 
-        public void LoadFromFile()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Remove<T>(string name)
         {
             throw new NotImplementedException();
         }
 
         public void Remove<T>(T item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SaveToFile()
         {
             throw new NotImplementedException();
         }
