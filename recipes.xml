@@ -1,4 +1,51 @@
 <Recipes>
+<Recipe>
+    <Name>Mlqko s oriz</Name>
+    <Products>
+    	<Product>
+        <Name>milk</Name>
+        <Price>2,05</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>rice</Name>
+        <Price>1,25</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>kanela</Name>
+        <Price>0,45</Price>
+        <Quantity>0,25</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+    </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Heat the milk</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>It should not boil.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix rice and milk</Name>
+        <Duration>3</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>The rice should soften.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Pour in bowls</Name>
+        <Duration>1</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Dessert</RecipeKind>
+  </Recipe>
   <Recipe>
     <Name>Tarator</Name>
     <Products>
