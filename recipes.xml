@@ -1,5 +1,74 @@
 <Recipes>
 <Recipe>
+<Name>Cake</Name>
+    <Products>
+      <Product>
+        <Name>joghurt</Name>
+        <Price>2</Price>
+        <Quantity>0.2</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>0.3</Price>
+        <Quantity>4</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>flour</Name>
+        <Price>3</Price>
+        <Quantity>0.4</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>oil</Name>
+        <Price>3</Price>
+        <Quantity>0.02</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>cacao</Name>
+        <Price>6</Price>
+        <Quantity>0.1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>sugar</Name>
+        <Price>2</Price>
+        <Quantity>0.1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Knead and mix</Name>
+        <Duration>15</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Flavour</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake</Name>
+        <Duration>40</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>150 Degrees</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Dessert</RecipeKind>
+ </Recipe> 
+
+<Recipe>
 <Name>Bachelor's potatoes</Name>
     <Products>
       <Product>
@@ -281,7 +350,7 @@
     </Preparations>
     <RecipeKind>Main</RecipeKind>
     </Recipe> 
-
+<Recipe> 
     <Name>Potato soup</Name>
     <Products>
     	<Product>
