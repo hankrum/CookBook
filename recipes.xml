@@ -6,13 +6,13 @@
         <Name>joghurt</Name>
         <Price>2</Price>
         <Quantity>0.2</Quantity>
-        <Unit>L</Unit>
+        <Unit>l</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>eggs</Name>
         <Price>0.3</Price>
-        <Quantity>4</Quantity>
+        <Quantity>5</Quantity>
         <Unit>Piece</Unit>
         <Obligatory>True</Obligatory>
       </Product>
@@ -20,7 +20,7 @@
         <Name>flour</Name>
         <Price>3</Price>
         <Quantity>0.4</Quantity>
-        <Unit>Kg</Unit>
+        <Unit>kg</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
@@ -34,14 +34,14 @@
         <Name>cacao</Name>
         <Price>6</Price>
         <Quantity>0.1</Quantity>
-        <Unit>Kg</Unit>
+        <Unit>kg</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>sugar</Name>
         <Price>2</Price>
         <Quantity>0.1</Quantity>
-        <Unit>Kg</Unit>
+        <Unit>kg</Unit>
         <Obligatory>True</Obligatory>
       </Product>
    </Products>
