@@ -1,19 +1,214 @@
 <Recipes>
 <Recipe>
-<Name>spaghetti Bolognese</Name>
+<Name>Bachelor's potatoes</Name>
+    <Products>
+      <Product>
+        <Name>potatoes</Name>
+        <Price>2</Price>
+        <Quantity>1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>salt</Name>
+        <Price>0.5</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>oil</Name>
+        <Price>3</Price>
+        <Quantity>0.02</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>15</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Flavour</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake</Name>
+        <Duration>10</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>WarmStarter</RecipeKind>
+ </Recipe> 
+<Recipe>
+<Name>Musaka</Name>
+    <Products>
+      <Product>
+        <Name>Minced meat</Name>
+        <Price>7</Price>
+        <Quantity>1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>potatoes</Name>
+        <Price>2</Price>
+        <Quantity>1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>tomatoes</Name>
+        <Price>1</Price>
+        <Quantity>1</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>4,0</Price>
+        <Quantity>100</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>flavours</Name>
+        <Price>1,0</Price>
+        <Quantity>5</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>0.3</Price>
+        <Quantity>2</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>joghurt</Name>
+        <Price>2</Price>
+        <Quantity>200</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut and fry</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix</Name>
+        <Duration>10</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake and mix the pour</Name>
+        <Duration>40</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+ </Recipe>   
+<Recipe>
+<Name>Snejanka</Name>
+    <Products>
+      <Product>
+        <Name>cucumber</Name>
+        <Price>2</Price>
+        <Quantity>500</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>joghurt</Name>
+        <Price>2</Price>
+        <Quantity>500</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>dill</Name>
+        <Price>1</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>garlic</Name>
+        <Price>4,0</Price>
+        <Quantity>4</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>salt</Name>
+        <Price>1,0</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>|Cut</Name>
+        <Duration>3</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix</Name>
+        <Duration>3</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Serve</Name>
+        <Duration>1</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Salad</RecipeKind>
+    </Recipe> 
+<Recipe>
+<Name>Spaghetti Bolognese</Name>
     <Products>
       <Product>
         <Name>spaghetti</Name>
-        <Price>2,0</Price>
-        <Quantity>0,5</Quantity>
-        <Unit>Kg</Unit>
+        <Price>2</Price>
+        <Quantity>500</Quantity>
+        <Unit>Gram</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>minced meat</Name>
         <Price>6,0</Price>
-        <Quantity>0,3</Quantity>
-        <Unit>Kg</Unit>
+        <Quantity>300</Quantity>
+        <Unit>Gram</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
@@ -26,29 +221,29 @@
       <Product>
         <Name>pepper</Name>
         <Price>4,0</Price>
-        <Quantity>0,1</Quantity>
-        <Unit>Kg</Unit>
+        <Quantity>100</Quantity>
+        <Unit>Gram</Unit>
         <Obligatory>False</Obligatory>
       </Product>
       <Product>
         <Name>onion</Name>
         <Price>1,0</Price>
-        <Quantity>0,15</Quantity>
-        <Unit>Kg</Unit>
+        <Quantity>150</Quantity>
+        <Unit>Gram</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>garlic</Name>
         <Price>5,0</Price>
-        <Quantity>0,05</Quantity>
-        <Unit>Kg</Unit>
+        <Quantity>50</Quantity>
+        <Unit>Gram</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>mozarella</Name>
         <Price>9,0</Price>
-        <Quantity>0,2</Quantity>
-        <Unit>Kg</Unit>
+        <Quantity>200</Quantity>
+        <Unit>Gram</Unit>
         <Obligatory>True</Obligatory>
       </Product>
    </Products>
@@ -85,6 +280,7 @@
       </Preparation>
     </Preparations>
     <RecipeKind>Main</RecipeKind>
+    </Recipe> 
 
     <Name>Potato soup</Name>
     <Products>
