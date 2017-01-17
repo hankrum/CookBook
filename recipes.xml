@@ -4,14 +4,14 @@
     <Products>
       <Product>
         <Name>joghurt</Name>
-        <Price>2</Price>
-        <Quantity>0.2</Quantity>
-        <Unit>l</Unit>
+        <Price>2,0</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>L</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>eggs</Name>
-        <Price>0.3</Price>
+        <Price>0,3</Price>
         <Quantity>5</Quantity>
         <Unit>Piece</Unit>
         <Obligatory>True</Obligatory>
@@ -19,29 +19,29 @@
       <Product>
         <Name>flour</Name>
         <Price>3</Price>
-        <Quantity>0.4</Quantity>
-        <Unit>kg</Unit>
+        <Quantity>0,4</Quantity>
+        <Unit>Kg</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>oil</Name>
         <Price>3</Price>
-        <Quantity>0.02</Quantity>
+        <Quantity>0,02</Quantity>
         <Unit>L</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>cacao</Name>
         <Price>6</Price>
-        <Quantity>0.1</Quantity>
-        <Unit>kg</Unit>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
         <Name>sugar</Name>
         <Price>2</Price>
-        <Quantity>0.1</Quantity>
-        <Unit>kg</Unit>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
         <Obligatory>True</Obligatory>
       </Product>
    </Products>
@@ -67,7 +67,6 @@
     </Preparations>
     <RecipeKind>Dessert</RecipeKind>
  </Recipe> 
-
 <Recipe>
 <Name>Bachelor's potatoes</Name>
     <Products>
@@ -80,7 +79,7 @@
       </Product>
       <Product>
         <Name>salt</Name>
-        <Price>0.5</Price>
+        <Price>0,5</Price>
         <Quantity>1</Quantity>
         <Unit>Tablespoon</Unit>
         <Obligatory>True</Obligatory>
@@ -88,7 +87,7 @@
       <Product>
         <Name>oil</Name>
         <Price>3</Price>
-        <Quantity>0.02</Quantity>
+        <Quantity>0,02</Quantity>
         <Unit>L</Unit>
         <Obligatory>True</Obligatory>
       </Product>
@@ -155,7 +154,7 @@
       </Product>
       <Product>
         <Name>eggs</Name>
-        <Price>0.3</Price>
+        <Price>0,3</Price>
         <Quantity>2</Quantity>
         <Unit>Piece</Unit>
         <Obligatory>True</Obligatory>
@@ -243,7 +242,7 @@
         <Description>Nothing special</Description>
       </Preparation>
       <Preparation>
-        <Name>|Cut</Name>
+        <Name>Cut</Name>
         <Duration>3</Duration>
         <Obligatory>True</Obligatory>
         <Description>Nothing special</Description>
@@ -418,7 +417,6 @@
     </Preparations>
     <RecipeKind>Soup</RecipeKind>
   </Recipe>
-  
 <Recipe>
     <Name>Milk with rice</Name>
     <Products>
@@ -466,7 +464,6 @@
     </Preparations>
     <RecipeKind>Dessert</RecipeKind>
   </Recipe>
-
   <Recipe>
     <Name>Tarator</Name>
     <Products>
