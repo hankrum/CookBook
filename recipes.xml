@@ -1,6 +1,161 @@
 <Recipes>
 <Recipe>
-    <Name>Mlqko s oriz</Name>
+<Name>spaghetti Bolognese</Name>
+    <Products>
+      <Product>
+        <Name>spaghetti</Name>
+        <Price>2,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>minced meat</Name>
+        <Price>6,0</Price>
+        <Quantity>0,3</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>water</Name>
+        <Price>0,0</Price>
+        <Quantity>0.4</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>pepper</Name>
+        <Price>4,0</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>1,0</Price>
+        <Quantity>0,15</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>garlic</Name>
+        <Price>5,0</Price>
+        <Quantity>0,05</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>mozarella</Name>
+        <Price>9,0</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Fry the meat and the onion</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>It's should be light brown</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut pepper, garlic</Name>
+        <Duration>3</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix and boil</Name>
+        <Duration>4</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Boil the spaghetti</Name>
+        <Duration>8</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+       <Preparation>
+        <Name>Add mozarella</Name>
+        <Duration>1</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+
+    <Name>Potato soup</Name>
+    <Products>
+    	<Product>
+        <Name>potatoes</Name>
+        <Price>2</Price>
+        <Quantity>0,8</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>yoghurt</Name>
+        <Price>2,0</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>water</Name>
+        <Price>0,0</Price>
+        <Quantity>1</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>garlic</Name>
+        <Price>0,05</Price>
+        <Quantity>5,0</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>carrot</Name>
+        <Price>1</Price>
+        <Quantity>30</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>pepper</Name>
+        <Price>4</Price>
+        <Quantity>70</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+    </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>7</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Soup</RecipeKind>
+  </Recipe>
+  
+<Recipe>
+    <Name>Milk with rice</Name>
     <Products>
     	<Product>
         <Name>milk</Name>
@@ -46,6 +201,7 @@
     </Preparations>
     <RecipeKind>Dessert</RecipeKind>
   </Recipe>
+
   <Recipe>
     <Name>Tarator</Name>
     <Products>
@@ -71,8 +227,8 @@
         <Obligatory>True</Obligatory>
       </Product>
       <Product>
-        <Name>garlic</Name>
-        <Price>0,05</Price>
+        <Name>onion</Name>
+        <Price>0,5</Price>
         <Quantity>5,0</Quantity>
         <Unit>Gram</Unit>
         <Obligatory>False</Obligatory>
@@ -100,6 +256,7 @@
     </Preparations>
     <RecipeKind>Soup</RecipeKind>
   </Recipe>
+
   <Recipe>
     <Name>Chicken soup</Name>
     <Products>
