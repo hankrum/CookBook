@@ -13,7 +13,6 @@ namespace CookBook.Data
             {
                 return this.name;
             }
-
             set
             {
                 Validation.IsNull(value);

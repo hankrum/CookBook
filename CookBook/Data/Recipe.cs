@@ -99,28 +99,6 @@ namespace CookBook.Data
 
             return timeNeeded;
         }
-        //public string AddRecipeSteps(Preparations ThePreparation)
-        //{
-        //    string fullRecipe = " ";
-
-        //    foreach (var item in ThePreparation.PreparationList)
-        //    {
-        //        fullRecipe += (string)item.Description;
-        //    }
-
-        //    return fullRecipe;
-        //}
-        //public string AddProducts(Products TheProducts)
-        //{
-        //    string allProducts = "+";
-
-        //    foreach (var item in TheProducts.ProductsList)
-        //    {
-        //        allProducts += (string)item.Name + "+" ;
-        //    }
-
-        //    return allProducts;
-        //}
 
     }
 }
