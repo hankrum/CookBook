@@ -1,0 +1,1080 @@
+<Recipes>
+<Recipe>
+<Name>Cake</Name>
+    <Products>
+      <Product>
+        <Name>joghurt</Name>
+        <Price>2,0</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>0,3</Price>
+        <Quantity>5</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>flour</Name>
+        <Price>3</Price>
+        <Quantity>0,4</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>oil</Name>
+        <Price>3</Price>
+        <Quantity>0,02</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>cacao</Name>
+        <Price>6</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>sugar</Name>
+        <Price>2</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Knead and mix</Name>
+        <Duration>15</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Flavour</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake</Name>
+        <Duration>40</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>150 Degrees</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Dessert</RecipeKind>
+ </Recipe> 
+<Recipe>
+<Name>Bachelor's potatoes</Name>
+    <Products>
+      <Product>
+        <Name>potatoes</Name>
+        <Price>2</Price>
+        <Quantity>1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>salt</Name>
+        <Price>0,5</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>oil</Name>
+        <Price>3</Price>
+        <Quantity>0,02</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>15</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Flavour</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake</Name>
+        <Duration>10</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>WarmStarter</RecipeKind>
+ </Recipe> 
+<Recipe>
+<Name>Musaka</Name>
+    <Products>
+      <Product>
+        <Name>Minced meat</Name>
+        <Price>7</Price>
+        <Quantity>1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>potatoes</Name>
+        <Price>2</Price>
+        <Quantity>1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>tomatoes</Name>
+        <Price>1</Price>
+        <Quantity>1</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>4,0</Price>
+        <Quantity>100</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>flavours</Name>
+        <Price>1,0</Price>
+        <Quantity>5</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>0,3</Price>
+        <Quantity>2</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>joghurt</Name>
+        <Price>2</Price>
+        <Quantity>200</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut and fry</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix</Name>
+        <Duration>10</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake and mix the pour</Name>
+        <Duration>40</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+ </Recipe>   
+<Recipe>
+<Name>Snejanka</Name>
+    <Products>
+      <Product>
+        <Name>cucumber</Name>
+        <Price>2</Price>
+        <Quantity>500</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>joghurt</Name>
+        <Price>2</Price>
+        <Quantity>500</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>dill</Name>
+        <Price>1</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>garlic</Name>
+        <Price>4,0</Price>
+        <Quantity>4</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>salt</Name>
+        <Price>1,0</Price>
+        <Quantity>1</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut</Name>
+        <Duration>3</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix</Name>
+        <Duration>3</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Serve</Name>
+        <Duration>1</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Salad</RecipeKind>
+    </Recipe> 
+<Recipe>
+<Name>Spaghetti Bolognese</Name>
+    <Products>
+      <Product>
+        <Name>spaghetti</Name>
+        <Price>2</Price>
+        <Quantity>500</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>minced meat</Name>
+        <Price>6,0</Price>
+        <Quantity>300</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>water</Name>
+        <Price>0,0</Price>
+        <Quantity>0.4</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>pepper</Name>
+        <Price>4,0</Price>
+        <Quantity>100</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>1,0</Price>
+        <Quantity>150</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>garlic</Name>
+        <Price>5,0</Price>
+        <Quantity>50</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>mozarella</Name>
+        <Price>9,0</Price>
+        <Quantity>200</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+   </Products>
+      <Preparations>
+      <Preparation>
+        <Name>Fry the meat and the onion</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>It's should be light brown</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut pepper, garlic</Name>
+        <Duration>3</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix and boil</Name>
+        <Duration>4</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Boil the spaghetti</Name>
+        <Duration>8</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+       <Preparation>
+        <Name>Add mozarella</Name>
+        <Duration>1</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+    </Recipe> 
+<Recipe> 
+    <Name>Potato soup</Name>
+    <Products>
+    	<Product>
+        <Name>potatoes</Name>
+        <Price>2</Price>
+        <Quantity>0,8</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>yoghurt</Name>
+        <Price>2,0</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>water</Name>
+        <Price>0,0</Price>
+        <Quantity>1</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>garlic</Name>
+        <Price>0,05</Price>
+        <Quantity>5,0</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>carrot</Name>
+        <Price>1</Price>
+        <Quantity>30</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>pepper</Name>
+        <Price>4</Price>
+        <Quantity>70</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+    </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>7</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Soup</RecipeKind>
+  </Recipe>
+<Recipe>
+    <Name>Milk with rice</Name>
+    <Products>
+    	<Product>
+        <Name>milk</Name>
+        <Price>2,05</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>rice</Name>
+        <Price>1,25</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>kanela</Name>
+        <Price>0,45</Price>
+        <Quantity>0,25</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+    </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Heat the milk</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>It should not boil.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix rice and milk</Name>
+        <Duration>3</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>The rice should soften.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Pour in bowls</Name>
+        <Duration>1</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Dessert</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Tarator</Name>
+    <Products>
+    	<Product>
+        <Name>cucumbers</Name>
+        <Price>2,5</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>yoghurt</Name>
+        <Price>2,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>water</Name>
+        <Price>0,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>0,5</Price>
+        <Quantity>5,0</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+    </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Soup</RecipeKind>
+  </Recipe>
+
+  <Recipe>
+    <Name>Chicken soup</Name>
+    <Products>
+      <Product>
+        <Name>chicken</Name>
+        <Price>4,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>potatoes</Name>
+        <Price>2,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>water</Name>
+        <Price>0,0</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>L</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>spaghetti</Name>
+        <Price>2,0</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>1,0</Price>
+        <Quantity>0,05</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+    </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Boil</Name>
+        <Duration>60</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cut</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Soup</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Shopska salad</Name>
+    <Products>
+    	<Product>
+        <Name>cucumbers</Name>
+        <Price>2,5</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>tomatoes</Name>
+        <Price>3,0</Price>
+        <Quantity>0,2</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>white cheese</Name>
+        <Price>1,0</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+    <Name>peppers</Name>
+        <Price>0,5</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>onion</Name>
+        <Price>0,3</Price>
+        <Quantity>0,1</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+      <Name>olive oil</Name>
+        <Price>0,5</Price>
+        <Quantity>30,0</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+      <Name>salt</Name>
+        <Price>0,1</Price>
+        <Quantity>10,0</Quantity>
+        <Unit>MilliGram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Peel</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Nothing special</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Combine</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Combine all the ingredients</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Grate</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Grate the cheese</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Salad</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Creme caramel</Name>
+    <Products>
+    	<Product>
+        <Name>sugar</Name>
+        <Price>1,0</Price>
+        <Quantity>160,0</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>butter</Name>
+        <Price>0,5</Price>
+        <Quantity>30,0</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>1,5</Price>
+        <Quantity>4,0</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>milk</Name>
+        <Price>0,50</Price>
+        <Quantity>600,0</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>vanilla extract</Name>
+        <Price>0,10</Price>
+        <Quantity>20,0</Quantity>
+        <Unit>MilliGram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Caramelize</Name>
+        <Duration>7</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Pour the sugar with some water in a stainless steel pan. Dissolve the sugar and boil until it becomes dark copper in colour.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cool</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Set aside and leave it to chill so it's not too hot and let it harden.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Make the custard</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Whisk the eggs and add vanilla if you want.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Prepare the ramekins</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Butter the ramekins so that the creme doesn't stick.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Prepare the milk and combine</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Pour the milk into a saucepan. Once it is slightly hot strain it through a fine sieve onto the egg mixture. Whisk together until smooth.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cook in the oven</Name>
+        <Duration>25</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Cook in the oven for about 20-30 minutes until the custard has set.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Take out and cool</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Take the creme caramels out of the oven, remove the ramekins and set them on a cooling rack.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Dessert</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Pizza Margherita</Name>
+    <Products>
+    	<Product>
+        <Name>flour</Name>
+        <Price>1,5</Price>
+        <Quantity>0,3</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>yeast</Name>
+        <Price>0,2</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>salt</Name>
+        <Price>0,3</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>olive oil</Name>
+        <Price>0,4</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>tomato sauce</Name>
+        <Price>3,0</Price>
+        <Quantity>200,0</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>Mozzarella</Name>
+        <Price>1,5</Price>
+        <Quantity>125,0</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Make the base</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Put the flour in a bowl, add in the salt and yeast. Pour 200 ml water and the olive oil and combine. Make a soft dough. Cover with a towel and leave it to rise.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Make the sauce</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Either get a ready-made tomato sauce or make your own using tomato puree, fresh basil and garlic cloves.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Roll the dough</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Roll the dough into large rounds, about 25 cm accross, using a rolling pin.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Top and bake</Name>
+        <Duration>15</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Put all the ingredients of the topping (Mozzarella etc.) and bake in a pre-heated oven at 240 degrees for about 10 minutes.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Beef Wellington</Name>
+    <Products>
+    	<Product>
+        <Name>beef fillet</Name>
+        <Price>8,0</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>olive oil</Name>
+        <Price>0,3</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>puff pastry</Name>
+        <Price>2,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>eggs</Name>
+        <Price>0,50</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>Worcestershire sauce</Name>
+        <Price>0,30</Price>
+        <Quantity>1,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>mushrooms</Name>
+        <Price>1,0</Price>
+        <Quantity>200,0</Quantity>
+        <Unit>Gram</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      <Product>
+        <Name>gravy sauce</Name>
+        <Price>2,0</Price>
+        <Quantity>200,0</Quantity>
+        <Unit>MilliLitre</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Rinse and dry the meat</Name>
+        <Duration>1</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Wash the meat and dry it using kitchen paper.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Prepare the pastry</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Roll the pastry to a rectangle, trim the edges. Wrap the ingredients inside it.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Refrigerate</Name>
+        <Duration>30</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Leave the pastry in the fridge so that it can chill for about 30 minutes.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Cook in the oven</Name>
+        <Duration>35</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Bake in a pre-heated oven for 25 minutes if you want the meat to be rare, 30 mins for medium rare, 35 for medium and about 45 minutes for well-done.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Leave it to rest</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Self-explanatory.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Add the gravy sauce</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Add the sauce and any other ingredients that you might like.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
+  <Recipe>
+    <Name>Adana kebap</Name>
+    <Products>
+    	<Product>
+        <Name>lamb meat</Name>
+        <Price>8,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>chili peppers</Name>
+        <Price>0,3</Price>
+        <Quantity>2,0</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>cumin</Name>
+        <Price>0,2</Price>
+        <Quantity>2,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>sumac</Name>
+        <Price>0,2</Price>
+        <Quantity>2,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>cold water</Name>
+        <Price>0,0</Price>
+        <Quantity>2,0</Quantity>
+        <Unit>Tablespoon</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>onion</Name>
+        <Price>0,5</Price>
+        <Quantity>2,0</Quantity>
+        <Unit>Piece</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>lavash bread</Name>
+        <Price>0,5</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>Flase</Obligatory>
+      </Product>
+      <Product>
+        <Name>bulgur</Name>
+        <Price>1,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>True</Obligatory>
+      </Product>
+      <Product>
+        <Name>tomato</Name>
+        <Price>1,0</Price>
+        <Quantity>0,5</Quantity>
+        <Unit>Kg</Unit>
+        <Obligatory>False</Obligatory>
+      </Product>
+      </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Combine the ingredients</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Mix the lamb minced meat with the spices and knead.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Divide the mixture</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Divide it into as many kebabs as you want to make.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Grill the kebabs</Name>
+        <Duration>12</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Cook directly over the hot side of a grill, turning occasionally.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Add garnish</Name>
+        <Duration>5</Duration>
+        <Obligatory>False</Obligatory>
+        <Description>Add tomatoes, peppers, bulgur, lavash bread or any other granish that you see as suitable.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
+  <Recipe>
+      <Name>Pancakes</Name>
+    <Products>
+    <Product>
+      <Name>Eggs</Name>
+      <Price>0,25</Price>
+      <Quantity>3,0</Quantity>
+      <Unit>Piece</Unit>
+      <Obligatory>True</Obligatory>
+    </Product>
+    <Product>
+      <Name>Milk</Name>
+      <Price>1,6</Price>
+      <Quantity>0,4</Quantity>
+      <Unit>L</Unit>
+      <Obligatory>True</Obligatory>
+    </Product>
+    <Product>
+      <Name>Flour</Name>
+      <Price>0,2</Price>
+      <Quantity>4,0</Quantity>
+      <Unit>Tablespoon</Unit>
+      <Obligatory>True</Obligatory>
+    </Product>
+    <Product>
+      <Name>Sugar</Name>
+      <Price>0,2</Price>
+      <Quantity>2,0</Quantity>
+      <Unit>Tablespoon</Unit>
+      <Obligatory>False</Obligatory>
+    </Product>
+    <Product>
+      <Name>Salt</Name>
+      <Price>0,2</Price>
+      <Quantity>2,0</Quantity>
+      <Unit>Tablespoon</Unit>
+      <Obligatory>False</Obligatory>
+    </Product>
+    <Product>
+      <Name>Walnut</Name>
+      <Price>10,0</Price>
+      <Quantity>0,1</Quantity>
+      <Unit>Kg</Unit>
+      <Obligatory>False</Obligatory>
+    </Product>
+  </Products>
+    <Preparations>
+      <Preparation>
+        <Name>Break the eggs</Name>
+        <Duration>2</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Break the eggs and put em in a bow(no shells pls).</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Mix everything</Name>
+        <Duration>5</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Make a mixture strating with eggs then add milk and after that add flour.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Make a good mixture</Name>
+        <Duration>4</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Keep mixing untill you get a homogeneous mixture. If you want you can add sugar or salt.</Description>
+      </Preparation>
+      <Preparation>
+        <Name>Bake the pancakes</Name>
+        <Duration>10</Duration>
+        <Obligatory>True</Obligatory>
+        <Description>Put enough mixture in a pan to cover its bottom. Wait the mixture to change colour and then 
+        flip the pancake to its uncooked side like the profesional chef you have become after reading this recipe.</Description>
+      </Preparation>
+    </Preparations>
+    <RecipeKind>Main</RecipeKind>
+  </Recipe>
+</Recipes>

@@ -11,7 +11,7 @@ namespace CookBook
             Recipes mainCollectionRecipes = new Recipes();
 
             XmlDocument doc = new XmlDocument();
-            doc.Load("recipes.xml");
+            doc.Load(@"..\..\recipes.xml");
             XmlNode rootNode = doc.DocumentElement;
             mainCollectionRecipes.LoadFromXML(rootNode);
             // var queryByProduct = mainCollectionRecipes.ByProduct("yoghurt");
